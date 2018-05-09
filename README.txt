@@ -13,7 +13,7 @@
 
 # Please cite this routine as:
 Bickel, V.T., Manconi, A., Amann, F. (2018). Quantitative assessment of Digital Image Correlation methods to detect and monitor surface
-displacements of large slope instabilities. Remote Sensing Journal.
+displacements of large slope instabilities. Remote Sensing Journal 2018.
 #______________________________________________________________________
 
 # Required Matlab toolboxes:
