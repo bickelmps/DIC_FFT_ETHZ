@@ -1,5 +1,5 @@
-# DIC using FFT-approach and optional pre- and post-processing
-#______________________________________________________________________________________________________
+DIC using FFT-approach and optional pre- and post-processing
+______________________________________________________________________________________________________
 for 8bit, equal dim, single band images
 Pre-processing: Wallis filter
 Post-processing: RSME threshold, mean, median, vector filter
@@ -14,15 +14,15 @@ Copyright (c) 2018 Valentin Tertius Bickel & Andrea Manconi
 Please cite this routine as:
 Bickel, V.T., Manconi, A., Amann, F. (2018). Quantitative assessment of Digital Image Correlation methods
 to detect and monitor surface displacements of large slope instabilities. Remote Sensing Journal 2018.
-#________________________________________________________________________________________________________
+________________________________________________________________________________________________________
 
-## Required Matlab toolboxes:
+# Required Matlab toolboxes:
 - MATLAB R2017a
 - Image Processing Toolbox
 (- Communication System Toolbox for Mean and Median filter, optional)
 
 
-## External/integrated functions/algorithms:
+# External/integrated functions/algorithms:
 - dftregistration.m   by Manuel Guizar-Sicairos, Samuel T. Thurman, and James R. Fienup, "Efficient subpixel image registration algorithms," Opt. Lett. 33, 156-158 (2008).
 Parts of their code has been taken from: J.R. Fienup and A.M. Kowalczyk, "Phase retrieval for a complex-valued object by using a low-resolution image," J. Opt. Soc. Am. A 7, 450-458 (1990).
 Online: https://de.mathworks.com/matlabcentral/fileexchange/18401-efficient-subpixel-image-registration-by-cross-correlation (Status: May 5th, 2018)
@@ -30,12 +30,12 @@ License included in "DIC/dft_registration_license.txt"
 - wallis_filter.m,   underlying principle taken from Baltsavias, E. P. "Multiphoto geometrically constrained matching." Doctoral Thesis, ETH Zurich, (1991).
 
 
-## Hardware requirements:
+# Hardware requirements:
 
 - Input image size of 30 MB requires at least ~5 GB RAM
 
 
-## Instructions
+# Instructions
 
 - Clone and unzip DIC_FFT_ETHZ_Repo
 
@@ -94,14 +94,14 @@ License included in "DIC/dft_registration_license.txt"
 
 
 
-|         ###############   ####################   #               #    ################
-|        #                           #            #               #                 ##
-|       #                           #            #               #               ##
-|      #                           #            #               #             ##
-|     ##############              #            #################           ##
-|    #                           #            #               #         ##
-|   #                           #            #               #       ##
-|  #                           #            #               #    ##
-|  ################            #            #               #   #################
+         ###############   ####################   #               #    ################
+        #                           #            #               #                 ##
+       #                           #            #               #               ##
+      #                           #            #               #             ##
+     ##############              #            #################           ##
+    #                           #            #               #         ##
+   #                           #            #               #       ##
+  #                           #            #               #    ##
+ ################            #            #               #   #################
 MIT License
 Copyright (c) 2018 Valentin Tertius Bickel & Andrea Manconi
