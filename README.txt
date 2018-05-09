@@ -37,6 +37,8 @@ License included in "DIC/dft_registration_license.txt"
 
 # Instructions
 
+- Clone and unzip DIC_FFT_ETHZ_Repo
+
 - Place Master and Slave images in the "Input" folder
 
 - Customize setup for Preprocessing, DIC, and Postprocessing in run_pixel_offset.m:
