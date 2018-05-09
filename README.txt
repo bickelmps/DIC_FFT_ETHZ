@@ -1,5 +1,5 @@
 ## DIC using FFT-approach and optional pre- and post-processing
-##_____________________________________________________________________
+##______________________________________________________________________________________________________
 # for 8bit, equal dim, single band images
 # Pre-processing: Wallis filter
 # Post-processing: RSME threshold, mean, median, vector filter
@@ -14,7 +14,7 @@
 # Please cite this routine as:
 Bickel, V.T., Manconi, A., Amann, F. (2018). Quantitative assessment of Digital Image Correlation methods
 to detect and monitor surface displacements of large slope instabilities. Remote Sensing Journal 2018.
-#______________________________________________________________________
+#________________________________________________________________________________________________________
 
 # Required Matlab toolboxes:
 - MATLAB R2017a
