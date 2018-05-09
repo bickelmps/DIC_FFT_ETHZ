@@ -12,8 +12,8 @@
 # Copyright (c) 2018 Valentin Tertius Bickel & Andrea Manconi
 
 # Please cite this routine as:
-Bickel, V.T., Manconi, A., Amann, F. (2018). Quantitative assessment of Digital Image Correlation methods to detect and monitor surface
-displacements of large slope instabilities. Remote Sensing Journal 2018.
+Bickel, V.T., Manconi, A., Amann, F. (2018). Quantitative assessment of Digital Image Correlation methods
+to detect and monitor surface displacements of large slope instabilities. Remote Sensing Journal 2018.
 #______________________________________________________________________
 
 # Required Matlab toolboxes:
@@ -23,11 +23,14 @@ displacements of large slope instabilities. Remote Sensing Journal 2018.
 
 
 # External/integrated functions/algorithms:
-- dftregistration.m   by Manuel Guizar-Sicairos, Samuel T. Thurman, and James R. Fienup, "Efficient subpixel image registration algorithms," Opt. Lett. 33, 156-158 (2008).
-Parts of their code has been taken from: J.R. Fienup and A.M. Kowalczyk, "Phase retrieval for a complex-valued object by using a low-resolution image," J. Opt. Soc. Am. A 7, 450-458 (1990).
+- dftregistration.m   by Manuel Guizar-Sicairos, Samuel T. Thurman, and James R. Fienup, "Efficient subpixel
+image registration algorithms," Opt. Lett. 33, 156-158 (2008).
+Parts of their code has been taken from: J.R. Fienup and A.M. Kowalczyk, "Phase retrieval for a complex-valued
+object by using a low-resolution image," J. Opt. Soc. Am. A 7, 450-458 (1990).
 Online: https://de.mathworks.com/matlabcentral/fileexchange/18401-efficient-subpixel-image-registration-by-cross-correlation (Status: May 5th, 2018)
 License included in "DIC/dft_registration_license.txt"
-- wallis_filter.m,   underlying principle taken from Baltsavias, E. P. "Multiphoto geometrically constrained matching." Doctoral Thesis, ETH Zurich, (1991).
+- wallis_filter.m,   underlying principle taken from Baltsavias, E. P. "Multiphoto geometrically constrained
+matching." Doctoral Thesis, ETH Zurich, (1991).
 
 
 # Hardware requirements:
@@ -64,16 +67,16 @@ License included in "DIC/dft_registration_license.txt"
                - pix = float./int. # Ground sampling distance of used input imagery in [m]
 
           Postprocessing (RMSE, Mean, Vector, Median filter) ---------------------------------------
-               - filter = 1-4 # select filter type, 1 = RMSE threshold-, 2 = Mean-, 3 = Vector-, 4 = Median filter
+               - filter = 1-4 # filter type, 1= RMSE threshold-, 2= Mean-, 3= Vector-, 4= Median filter
 
                - thr = 0-1 # threshold, 1 = no mask
 
                - mfws = [int. int.] # dimensions of mean filter window in [pix]
                - cut = int. # cut off value, OPTIONAL in [pix]
  
-               - magcap = wi/int. or int. # tolerance-diff, values which are greater as this value are cut, in [pix]
-               - xcap = wi/int. or int. # tolerance-diff, values which are greater as this value are cut, in [pix]
-               - ycap = wi/int. or int. # tolerance-diff, values which are greater as this value are cut, in [pix]
+               - magcap = wi/int. or int. # tolerance-diff, values greater as value are cut, in [pix]
+               - xcap = wi/int. or int.
+               - ycap = wi/int. or int.
 
                - med = [int. int.] # dimensions of median filter window [pixel]
 
