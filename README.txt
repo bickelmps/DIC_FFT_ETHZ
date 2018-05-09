@@ -41,13 +41,13 @@ License included in "DIC/dft_registration_license.txt"
 
 - Customize setup for Preprocessing, DIC, and Postprocessing in run_pixel_offset.m:
 
-          Inputs --------------------------------------------------------------------------------------------------------------------------------
+          Inputs ----------------------------------------------------------------------------------
                - master = 'string' (name of master.type); # used for DIC
                - orig_m = 'string' (name of master.type); # used for plotting
                - slave = 'string' (name of slave.type);
                - orig_s = 'string' (name of slave.type);
 
-          Preprocessing (Wallis filter & Co-registration) ---------------------------------------------------------------------------------------
+          Preprocessing (Wallis filter & Co-registration) -----------------------------------------
                - wallis = 0/1  # wallis filter off/on
                - win = int. # window size, even numbers only
                - tarm = int. # target mean
@@ -58,13 +58,13 @@ License included in "DIC/dft_registration_license.txt"
                - sp = int. # image split
                - co_os = int. # image oversampling
 
-          DIC -----------------------------------------------------------------------------------------------------------------------------------
+          DIC --------------------------------------------------------------------------------------
                - wi = 2^n, n = int. # window size in [pix]
                - os = int. # FFT oversampling factor
                - pix = float./int. # Ground sampling distance of used input imagery in [m]
 
-          Postprocessing (RMSE, Mean, Vector, Median filter) ------------------------------------------------------------------------------------
-               - filter = 1-4 # select filter type, 1 = RMSE threshold filter, 2 = Arithmetic mean, 3 = Vector filter, 4 = Median filter
+          Postprocessing (RMSE, Mean, Vector, Median filter) ---------------------------------------
+               - filter = 1-4 # select filter type, 1 = RMSE threshold-, 2 = Mean-, 3 = Vector-, 4 = Median filter
 
                - thr = 0-1 # threshold, 1 = no mask
 
@@ -77,7 +77,7 @@ License included in "DIC/dft_registration_license.txt"
 
                - med = [int. int.] # dimensions of median filter window [pixel]
 
-           Additional settings -------------------------------------------------------------------------------------------------------------------
+           Additional settings ---------------------------------------------------------------------
                - scalax = [int. int.] # min and max values for the X displacement colorscale, in [m]
                - scalay = [int. int.] # min and max values for the Y displacement colorscale, in [m]
 
