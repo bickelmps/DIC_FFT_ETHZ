@@ -1,13 +1,17 @@
 ﻿
 # DIC using FFT-approach and optional pre- and post-processing
 
-for 8bit, equal dim, single band images.
-Pre-processing: Wallis filter.
-Post-processing: RSME threshold, mean, median, vector filter.
+for 8bit, equal dim, single band images
 
-A. Manconi & V. T. Bickel, 2.5.18.
-andrea.manconi@erdw.ethz.ch / valentin.bickel@erdw.ethz.ch.
-ETH Zurich / MPS Goettingen.
+Pre-processing: Wallis filter
+
+Post-processing: RSME threshold, mean, median, vector filter
+
+A. Manconi & V. T. Bickel, 2.5.18
+
+andrea.manconi@erdw.ethz.ch / valentin.bickel@erdw.ethz.ch
+
+ETH Zurich / MPS Goettingen
 
 ##### MIT License
 ##### Copyright (c) 2018 Valentin Tertius Bickel & Andrea Manconi
