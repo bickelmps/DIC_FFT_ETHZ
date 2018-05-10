@@ -7,6 +7,8 @@ Pre-processing: Wallis filter
 
 Post-processing: RSME threshold, mean, median, vector filter
 
+-----------------------------------
+
 A. Manconi & V. T. Bickel, 2.5.18
 
 andrea.manconi@erdw.ethz.ch / valentin.bickel@erdw.ethz.ch
