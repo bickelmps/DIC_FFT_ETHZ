@@ -105,7 +105,7 @@ License included in "DIC/dft_registration_license.txt"
 
 ![](https://lh3.googleusercontent.com/WPJUSL6LNW25MJ8lrCsyz4GUkjhZgGNGDcMHltAd2iqR0rWJZSq8fh6IcwjxLaJos9U3QPqYH0-Q "DIC Example")
 ##### Application of various DIC algorithms to a landslide in the Swiss Alps; the magnitude of the displacement is displayed in meters. The central column represents the results derived with the available FFT-based approach. 
-###### Taken from Bickel, V.T., Manconi, A., Amann, F. (2018). Quantitative assessment of Digital Image Correlation methods to detect and monitor surface displacements of large slope instabilities. Remote Sensing Journal 2018.
+###### Taken from Bickel, V.T.; Manconi, A.; Amann, F. Quantitative Assessment of Digital Image Correlation Methods to Detect and Monitor Surface Displacements of Large Slope Instabilities. Remote Sens. 2018, 10, 865.
 
 ------------------
 ##### MIT License
