@@ -3,6 +3,8 @@
 
 #### State of the Art - for 8bit, equal dim, single- and multi-channel images
 
+#### Quantify displacement of features in a series of images over time & retrieve displacement velocities. Output data include 2D-displacement maps, the displacement resultant (magnitude), and displacement vectors.
+
 ### Pre-processing:
 (1) Wallis filter, (2) Sub-Pixel Co-Registration
 
