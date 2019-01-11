@@ -1,15 +1,13 @@
 ﻿
 # Digital Image Correlation using an FFT-approach
 
-#### State of the Art
-
-for 8bit, equal dim, single- and multi-channel images
+#### State of the Art - for 8bit, equal dim, single- and multi-channel images
 
 ### Pre-processing:
-Wallis filter, Sub-Pixel Co-Registration
+(1) Wallis filter, (2) Sub-Pixel Co-Registration
 
 ### Post-processing:
-RSME Threshold, Mean, Median, Vector Filters
+(1) RSME Threshold, (2) Mean, (3) Median, (4) Vector Filters
 
 <img src="https://github.com/bickelmps/DIC_FFT_ETHZ/blob/master/Figures/glacier.gif?raw=true">
 
