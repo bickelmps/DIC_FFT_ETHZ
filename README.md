@@ -1,11 +1,11 @@
 ﻿
 # DIC using a FFT-approach
 
-for 8bit, equal dim, single band images
+for 8bit, equal dim, single- and multi-channel images
 
-Pre-processing: Wallis filter
+Pre-processing: Wallis filter, Sub-Pixel Co-Registration
 
-Post-processing: RSME threshold, mean, median, vector filter
+Post-processing: RSME Threshold, Mean, Median, Vector Filters
 
 -----------------------------------
 
