@@ -1,5 +1,5 @@
 ﻿
-# DIC using a FFT-approach
+# Digital Image Correlation using an FFT-approach
 
 for 8bit, equal dim, single- and multi-channel images
 
