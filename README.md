@@ -9,6 +9,8 @@ Pre-processing: Wallis filter, Sub-Pixel Co-Registration
 
 Post-processing: RSME Threshold, Mean, Median, Vector Filters
 
+<img src="https://github.com/bickelmps/DIC_FFT_ETHZ/blob/master/Figures/glacier.gif?raw=true">
+
 -----------------------------------
 
 A. Manconi & V. T. Bickel, 2.5.18
