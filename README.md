@@ -5,25 +5,21 @@
 
 for 8bit, equal dim, single- and multi-channel images
 
-Pre-processing: Wallis filter, Sub-Pixel Co-Registration
+### Pre-processing:
+Wallis filter, Sub-Pixel Co-Registration
 
-Post-processing: RSME Threshold, Mean, Median, Vector Filters
+### Post-processing:
+RSME Threshold, Mean, Median, Vector Filters
 
 <img src="https://github.com/bickelmps/DIC_FFT_ETHZ/blob/master/Figures/glacier.gif?raw=true">
 
 -----------------------------------
 
 A. Manconi & V. T. Bickel, 2.5.18
-
 valentin.bickel@erdw.ethz.ch / andrea.manconi@erdw.ethz.ch
-
 ETH Zurich / MPS Goettingen
 
-##### MIT License
-##### Copyright (c) 2018 Valentin Tertius Bickel & Andrea Manconi
-
------------------------------------
-
+##### MIT License - Copyright (c) 2018 Valentin Tertius Bickel & Andrea Manconi
 Please cite this routine as:
 #### Bickel, V.T.; Manconi, A.; Amann, F. Quantitative Assessment of Digital Image Correlation Methods to Detect and Monitor Surface Displacements of Large Slope Instabilities. Remote Sens. 2018, 10, 865.
 http://www.mdpi.com/2072-4292/10/6/865
@@ -113,5 +109,4 @@ License included in "DIC/dft_registration_license.txt"
 <img src="https://github.com/bickelmps/DIC_FFT_ETHZ/blob/master/Figures/glacier.gif?raw=true">
 
 ------------------
-##### MIT License
-##### Copyright (c) 2018 Valentin Tertius Bickel & Andrea Manconi
+##### MIT License - Copyright (c) 2018 Valentin Tertius Bickel & Andrea Manconi
