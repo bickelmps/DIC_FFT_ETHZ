@@ -3,7 +3,7 @@
 
 #### State of the Art - for 8bit, equal dim, single- and multi-channel images
 
-#### Quantify displacement of features in a series of images over time & retrieve displacement velocities. Output data include 2D-displacement maps, the displacement resultant (magnitude), and displacement vectors.
+#### Quantify displacement of features in a series of images over time & retrieve displacement velocities. Output data include CVP 2D-displacement maps, the displacement resultant (magnitude), and displacement vectors.
 #### Built-in pre-processing routines:
 (1) Wallis Filter: Dynamic Contrast Enhancement of both input images; improves the quality of the FFT correlation significantly and helps to suppress noise.
 
