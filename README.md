@@ -1,5 +1,5 @@
 ﻿
-# DIC using FFT-approach and optional pre- and post-processing
+# DIC using a FFT-approach
 
 for 8bit, equal dim, single band images
 
@@ -11,7 +11,7 @@ Post-processing: RSME threshold, mean, median, vector filter
 
 A. Manconi & V. T. Bickel, 2.5.18
 
-andrea.manconi@erdw.ethz.ch / valentin.bickel@erdw.ethz.ch
+valentin.bickel@erdw.ethz.ch / andrea.manconi@erdw.ethz.ch
 
 ETH Zurich / MPS Goettingen
 
@@ -49,7 +49,7 @@ License included in "DIC/dft_registration_license.txt"
 
 1. Clone and unzip DIC_FFT_ETHZ_Repo
 
-2. Place Master and Slave images in the "Input" folder
+2. Place Master and Slave images in the "Input" folder (or copy images from 'Example' folder)
 
 3. Customize setup for Preprocessing, DIC, and Postprocessing in run_pixel_offset.m:
 
@@ -104,7 +104,7 @@ License included in "DIC/dft_registration_license.txt"
 
 ### Possible results
 
-#### Advancing glacier, one image per day:
+##### Advancing glacier, one image per day:
 
 <img src="https://github.com/bickelmps/DIC_FFT_ETHZ/blob/master/Figures/glacier.gif?raw=true">
 
