@@ -4,12 +4,15 @@
 #### State of the Art - for 8bit, equal dim, single- and multi-channel images
 
 #### Quantify displacement of features in a series of images over time & retrieve displacement velocities. Output data include 2D-displacement maps, the displacement resultant (magnitude), and displacement vectors.
+#### Built-in pre-processing routines:
+(1) Wallis Filter: Dynamic Contrast Enhancement of both input images; improves the quality of the FFT correlation significantly and helps to suppress noise.
+(2) Sub-Pixel Co-Registration: Aligns both input images on a sub-pixel level; signifcantly improves the quality of the correlation and the absolute accuracy of the displacement measurement.
 
-### Pre-processing:
-(1) Wallis filter, (2) Sub-Pixel Co-Registration
-
-### Post-processing:
-(1) RSME Threshold, (2) Mean, (3) Median, (4) Vector Filters
+#### Built-in post-processing routines:
+(1) RSME Threshold Filter: Filters DIC output based on a RMSE threshold.
+(2) Mean Filter: Filters DIC output with a algorithmic mean kernel.
+(3) Median Filter: Filters DIC output with a median kernel.
+(4) Vector Filter: Filters DIC output based on the pixel neighborhood's displacement vector direction & magnitude.
 
 <img src="https://github.com/bickelmps/DIC_FFT_ETHZ/blob/master/Figures/glacier.gif?raw=true">
 
