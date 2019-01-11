@@ -13,8 +13,10 @@
 
 -----------------------------------
 
-A. Manconi & V. T. Bickel, 2.5.18
+V. T. Bickel & A. Manconi, May 2nd 2018
+
 valentin.bickel@erdw.ethz.ch / andrea.manconi@erdw.ethz.ch
+
 ETH Zurich / MPS Goettingen
 
 ##### MIT License - Copyright (c) 2018 Valentin Tertius Bickel & Andrea Manconi
