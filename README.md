@@ -104,9 +104,9 @@ License included in "DIC/dft_registration_license.txt"
 
 ### Possible results
 
-![](https://lh3.googleusercontent.com/WPJUSL6LNW25MJ8lrCsyz4GUkjhZgGNGDcMHltAd2iqR0rWJZSq8fh6IcwjxLaJos9U3QPqYH0-Q "DIC Example")
-##### Application of various DIC algorithms to a landslide in the Swiss Alps; the magnitude of the displacement is displayed in meters. The central column represents the results derived with the available FFT-based approach. 
-###### Taken from Bickel, V.T.; Manconi, A.; Amann, F. Quantitative Assessment of Digital Image Correlation Methods to Detect and Monitor Surface Displacements of Large Slope Instabilities. Remote Sens. 2018, 10, 865.
+#### Advancing glacier, one image per day:
+
+<img src="https://github.com/bickelmps/DIC_FFT_ETHZ/blob/master/Figures/glacier.gif?raw=true">
 
 ------------------
 ##### MIT License
