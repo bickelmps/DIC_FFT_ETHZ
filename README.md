@@ -7,7 +7,7 @@
 #### Built-in pre-processing routines:
 (1) Wallis Filter: Dynamic Contrast Enhancement of both input images; improves the quality of the FFT correlation significantly and helps to suppress noise.
 
-(2) Sub-Pixel Co-Registration: Aligns both input images on a sub-pixel level; signifcantly improves the quality of the correlation and the absolute accuracy of the displacement measurement.
+(2) Sub-Pixel Co-Registration: Aligns both input images on a sub-pixel level; significantly improves the quality of the correlation and the absolute accuracy of the displacement measurement.
 
 #### Built-in post-processing routines:
 (1) RSME Threshold Filter: Filters DIC output based on a RMSE threshold.
