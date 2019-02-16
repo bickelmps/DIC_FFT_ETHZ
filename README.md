@@ -58,7 +58,7 @@ License included in "DIC/dft_registration_license.txt"
 
 1. Clone and unzip DIC_FFT_ETHZ_Repo
 
-2. Place Master and Slave images in the "Input" folder (or copy images from 'Example' folder)
+2. Place Master and Slave image(s) in the "Input" folder (or copy images from 'Example' folder for a demo)
 
 3. Customize setup for Preprocessing, DIC, and Postprocessing in run_pixel_offset.m:
 
@@ -109,7 +109,7 @@ License included in "DIC/dft_registration_license.txt"
 
 - Execute run_pixel_offset.m
 
-- Collect displacement matrix ascii from "Output" folder
+- Collect displacement matrix ascii from "Output" folder for further utilization of results
 
 ### Possible results
 
