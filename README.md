@@ -37,7 +37,7 @@ ________________________________________________________________________________
 ### Tool is being used by:
 - Engineering Geology Group, ETH Zurich, Switzerland
 - Swiss Seismological Service, ETH Zurich, Switzerland
-- Department Planets and Comets, Max Planck Institute for Solar System Reserch, Germany
+- Department Planets and Comets, Max Planck Institute for Solar System Research, Germany
 - [...]
 
 
