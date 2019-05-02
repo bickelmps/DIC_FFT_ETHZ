@@ -33,10 +33,11 @@ Please cite this routine as:
 http://www.mdpi.com/2072-4292/10/6/865
 ________________________________________________________________________________________________________
 
-### Tool used by:
-- Engineering Geology Department, ETH Zurich, Switzerland
+### Tool is being used by:
+- Engineering Geology Group, ETH Zurich, Switzerland
 - Swiss Seismological Service, ETH Zurich, Switzerland
 - Department Planets and Comets, Max Planck Institute for Solar System Reserch, Germany
+- [...]
 
 
 ### Required Matlab toolboxes:
