@@ -67,56 +67,61 @@ License included in "DIC/dft_registration_license.txt"
 
 2. Place Master and Slave image(s) in the "Input" folder (or copy images from 'Example' folder for a demo)
 
-3. Customize setup for Preprocessing, DIC, and Postprocessing in run_pixel_offset.m:
+3. Customize setup for Preprocessing, DIC, and Postprocessing in run_pixel_offset.m, using the following variables. More information about the variables further below:
 
           Inputs ----------------------------------------------------------------------------------
-               - master = 'string' (name of master.type); # used for DIC
-               - orig_m = 'string' (name of master.type); # used for plotting
+               - geotiff = 0/1
+               - epsg = int.
+               - PCS = 'string'
+               - master = 'string' (name of master.type);
+               - orig_m = 'string' (name of master.type);
                - slave = 'string' (name of slave.type);
                - orig_s = 'string' (name of slave.type);
+               - inputfilename = 'string'
+               - outfilename = 'string'
 
           Preprocessing (Wallis filter & Co-registration) -----------------------------------------
-               - wallis = 0/1  # wallis filter off/on
-               - win = int. # window size, even numbers only
-               - tarm = int. # target mean
-               - tars = int. # target standard deviation
-               - b = 0-1 # brightness enforcing constant
-               - c = 0-1 # contrast enforcing constant
+               - wallis = 0/1
+               - win = int.
+               - tarm = int.
+               - tars = int.
+               - b = 0-1
+               - c = 0-1
 
-               - sp = int. # image split
-               - co_os = int. # image oversampling
+               - sp = int.
+               - co_os = int.
 
           DIC -------------------------------------------------------------------------------------
-               - wi = 2^n, n = int. # window size in [pix]
-               - os = int. # FFT oversampling factor
-               - pix = float./int. # Ground sampling distance of used input imagery in [m]
+               - wi = 2^n, n = int.
+               - os = int.
+               - pix = float./int.
 
           Postprocessing (RMSE, Mean, Vector, Median filter) --------------------------------------
-               - filter = 1-4 # filter type, 1= RMSE threshold-, 2= Mean-, 3= Vector-, 4= Median filter
+               - filter = 1-4
 
-               - thr = 0-1 # threshold, 1 = no mask
+               - thr = 0-1
 
-               - mfws = [int. int.] # dimensions of mean filter window in [pix]
-               - cut = int. # cut off value, OPTIONAL in [pix]
+               - mfws = [int. int.]
+               - cut = int.
  
-               - magcap = wi/int. or int. # tolerance-diff, values greater as value are cut, in [pix]
+               - magcap = wi/int. or int.
                - xcap = wi/int. or int.
                - ycap = wi/int. or int.
 
-               - med = [int. int.] # dimensions of median filter window [pixel]
+               - med = [int. int.]
 
            Additional settings --------------------------------------------------------------------
-               - scalax = [int. int.] # min and max values for the X displacement colorscale, in [m]
-               - scalay = [int. int.] # min and max values for the Y displacement colorscale, in [m]
+               - scalax = [int. int.]
+               - scalay = [int. int.]
 
-               - coppia = 'string' # name of output ascii file
+               - coppia = 'string'
 
-               - skip_x = wi/int. # search window skip in X
-               - skip_y = wi/int. # search window skip in Y
+               - skip_x = wi/int.
+               - skip_y = wi/int.
 
 - Execute run_pixel_offset.m
 
-- Collect displacement matrix ascii from "Output" folder for further utilization of results
+- Collect displacement matrix ascii and deformation magnitude map tif from "Output" folder for further utilization of results (e.g. GIS)
 
 ### Possible results
 
