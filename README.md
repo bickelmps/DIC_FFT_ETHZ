@@ -1,7 +1,7 @@
 ﻿
 # Digital Image Correlation using an FFT-approach
 
-#### State of the Art - for 8bit, equal dim, single- and multi-channel images, with on-demand geotiff information forwarding
+#### State of the Art, validated, and calibrated DIC tool - for 8bit, equal dim, single- and multi-channel images, with on-demand geotiff information forwarding
 
 #### Quantify displacement of features in a series of images over time & retrieve displacement velocities. Output data include CVP 2D-displacement maps, the displacement resultant (magnitude), displacement vectors, as well as a geo-rectified GIS-ready map (optional).
 #### Built-in pre-processing routines:
@@ -25,6 +25,7 @@
 V. T. Bickel & A. Manconi, May 2nd 2018
 
 [valentin.bickel@erdw.ethz.ch / andrea.manconi@erdw.ethz.ch]
+
 ETH Zurich / MPS Goettingen
 
 ##### MIT License - Copyright (c) 2018 Valentin Tertius Bickel & Andrea Manconi
