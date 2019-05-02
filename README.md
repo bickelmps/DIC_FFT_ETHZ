@@ -124,7 +124,7 @@ License included in "DIC/dft_registration_license.txt"
 5. Collect displacement matrix ascii and deformation magnitude map tif from "Output" folder for further utilization of results (e.g. drag & drop into a GIS)
 
 ## Input Parameter Description
-### Inputs
+### Inputs - - - - - - - - - -
 #### geotiff
 indicate here, if you would like to forward geotiff information (=1) or not (=0)
 
@@ -154,7 +154,7 @@ Enter the name of any image that holds geo-information here, excluding the file 
 #### outfilename
 Choose the name of the displacement magnitude map file here
 
-### Preprocessing (Wallis filter & Co-registration)
+### Preprocessing (Wallis filter & Co-registration) - - - - - - - - - -
 #### wallis
 indicate here, if you would like to apply a Wallis filter (=1) or not (=0)
 
@@ -189,7 +189,7 @@ specify the oversampling factor of the FFT correlator - theoretically, a larger 
 #### pix
 enter the spatial resolution (GSD) of the used images in m/pixel
 
-### Postprocessing (RMSE, Mean, Vector, Median filter)
+### Postprocessing (RMSE, Mean, Vector, Median filter) - - - - - - - - - -
 #### filter
 choose whether you would like to use the RMSE filter (=1), the arithmetic mean filter (=2), the spatial vector filter (=3), or the median filter (=4) - the filters are described here: http://www.mdpi.com/2072-4292/10/6/865
 
@@ -214,7 +214,7 @@ specify the y direction (N-S, up-down) cap in pixels - values which are greater 
 #### med
 specify the median filter window size in pixels - a larger window will result in a strongly blurred displacement map
 
-### Additional settings
+### Additional settings - - - - - - - - - -
 #### scalax
 specify the Min and Max values in x direction (E-W, left-right) that will be displayed in meters - everything above and below this range will be saturated at the given Min / Max value; in general, this range should be small for slow displacements and large for fast displacements; at the same time, regions with heterogeneous displacement velocities could require to this code with different ranges in order to catch the entire variety of displacement velocities!
 
