@@ -124,13 +124,19 @@ License included in "DIC/dft_registration_license.txt"
 - Collect displacement matrix ascii and deformation magnitude map tif from "Output" folder for further utilization of results (e.g. GIS)
 
 ## Input Parameter Description
+### Inputs
+#### geotiff
 
-          Inputs ----------------------------------------------------------------------------------
-               - geotiff = indicate here, if you would like to forward geotiff information (=1) or not (=0)
-               - epsg = in case you would like to forward geotiff information, enter the desired EPSG code here
-                 --> you can get this number here: https://spatialreference.org/ref/epsg/
-               - PCS = in case you would like to forward geotiff information, enter the desired Projected CS
-                 Parameter Keys here - this info might be stored in your image!
+indicate here, if you would like to forward geotiff information (=1) or not (=0)
+
+#### epsg
+in case you would like to forward geotiff information, enter the desired EPSG code here
+--> you can get this number here: https://spatialreference.org/ref/epsg/
+
+#### PCS
+in case you would like to forward geotiff information, enter the desired Projected CS Parameter Keys
+here - this info might be stored in your image!
+
                - master = 
                - orig_m = 
                - slave = 
