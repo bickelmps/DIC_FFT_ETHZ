@@ -119,9 +119,9 @@ License included in "DIC/dft_registration_license.txt"
                - skip_x = wi/int.
                - skip_y = wi/int.
 
-- Execute run_pixel_offset.m
+4. Execute run_pixel_offset.m
 
-- Collect displacement matrix ascii and deformation magnitude map tif from "Output" folder for further utilization of results (e.g. GIS)
+5. Collect displacement matrix ascii and deformation magnitude map tif from "Output" folder for further utilization of results (e.g. drag & drop into a GIS)
 
 ## Input Parameter Description
 ### Inputs
