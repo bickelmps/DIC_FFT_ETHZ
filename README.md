@@ -236,6 +236,8 @@ specify the search window skip in y direction (N-S, up-down) - be aware of alias
 
 <img src="https://github.com/bickelmps/DIC_FFT_ETHZ/blob/master/Figures/glacier.gif?raw=true">
 
+##### Displacement magnitude map used in a GIS environment, here: QGIS) - example from the Swiss Alps, red color means large displacement magnitude:
+
 <img src="https://github.com/bickelmps/DIC_FFT_ETHZ/blob/master/Figures/new_figure.PNG?raw=true">
 
 ------------------
