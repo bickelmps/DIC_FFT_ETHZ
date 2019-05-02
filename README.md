@@ -70,7 +70,7 @@ License included in "DIC/dft_registration_license.txt"
 3. Customize setup for Preprocessing, DIC, and Postprocessing in run_pixel_offset.m, using the following variables. More information about the variables further below:
 
           Inputs ----------------------------------------------------------------------------------
-               ##### geotiff = 0/1
+               - geotiff = 0/1
                - epsg = int.
                - PCS = 'string'
                - master = 'string'
@@ -124,7 +124,7 @@ License included in "DIC/dft_registration_license.txt"
 5. Collect displacement matrix ascii and deformation magnitude map tif from "Output" folder for further utilization of results (e.g. drag & drop into a GIS)
 
 ## Input Parameter Description
-### Inputs - - - - - - - - - -
+### Inputs   - - - - - - - - - -
 #### geotiff
 indicate here, if you would like to forward geotiff information (=1) or not (=0)
 
@@ -154,7 +154,7 @@ Enter the name of any image that holds geo-information here, excluding the file 
 #### outfilename
 Choose the name of the displacement magnitude map file here
 
-### Preprocessing (Wallis filter & Co-registration) - - - - - - - - - -
+### Preprocessing (Wallis filter & Co-registration)   - - - - - - - - - -
 #### wallis
 indicate here, if you would like to apply a Wallis filter (=1) or not (=0)
 
@@ -179,7 +179,7 @@ define the desired image split that is being used for the Co-Registration - 1  m
 #### co_os
 apply a oversampling factor for the Co-Registration, if desired - theoretically, a larger oversampling factor will result in a more accurate (sub-pixel) Co-Registration - in practice, a factor of 1 or max. 4 will be sufficient
 
-### DIC - - - - - - - - - -
+### DIC   - - - - - - - - - -
 #### wi
 specify the desired window size in pixels; stick to the 'power of 2 rule' - a larger window will produce a better correlation and a better coverage of the displacement; a smaller window size helps to resolve smaller spatial scales of the displacement to the cost of a higher noise level; accuracy of the derived displacement is not influenced by the window size, see: http://www.mdpi.com/2072-4292/10/6/865
                
@@ -189,7 +189,7 @@ specify the oversampling factor of the FFT correlator - theoretically, a larger 
 #### pix
 enter the spatial resolution (GSD) of the used images in m/pixel
 
-### Postprocessing (RMSE, Mean, Vector, Median filter) - - - - - - - - - -
+### Postprocessing (RMSE, Mean, Vector, Median filter)   - - - - - - - - - -
 #### filter
 choose whether you would like to use the RMSE filter (=1), the arithmetic mean filter (=2), the spatial vector filter (=3), or the median filter (=4) - the filters are described here: http://www.mdpi.com/2072-4292/10/6/865
 
@@ -214,7 +214,7 @@ specify the y direction (N-S, up-down) cap in pixels - values which are greater 
 #### med
 specify the median filter window size in pixels - a larger window will result in a strongly blurred displacement map
 
-### Additional settings - - - - - - - - - -
+### Additional settings   - - - - - - - - - -
 #### scalax
 specify the Min and Max values in x direction (E-W, left-right) that will be displayed in meters - everything above and below this range will be saturated at the given Min / Max value; in general, this range should be small for slow displacements and large for fast displacements; at the same time, regions with heterogeneous displacement velocities could require to this code with different ranges in order to catch the entire variety of displacement velocities!
 
