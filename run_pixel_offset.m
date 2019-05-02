@@ -1,12 +1,13 @@
 %%_________________________________________________________________________
 %% DIC using FFT-approach and optional pre- and post-processing
 %%_________________________________________________________________________
-% for 8bit, equal dim, single band images
-% Pre-processing: Wallis filter
-% Post-processing: RSME threshold, mean, median, vector filter
+% for 8bit, equal dim, single- and three-band images, with on-demand
+% geotiff information forwarding
+% Pre-processing: Wallis filter, Co-Registration
+% Post-processing: RMSE threshold, mean, median, spatial vector filter
 
-% A. Manconi & V. Bickel, 2.5.18
-% andrea.manconi@erdw.ethz.ch / valentin.bickel@erdw.ethz.ch
+% V. Bickel & A. Manconi 2.5.18
+% valentin.bickel@erdw.ethz.ch / andrea.manconi@erdw.ethz.ch
 % ETH Zurich / MPS Goettingen
 
 % MIT License
@@ -16,7 +17,7 @@
 % Bickel, V.T.; Manconi, A.; Amann, F.
 % "Quantitative assessment of Digital Image Correlation methods to detect
 % and monitor surface displacements of large slope instabilities."
-% Remote Sensing Journal 2018.
+% Remote Sens. 2018, 10(6), 865.
 %%_________________________________________________________________________
 %%
         warning off;clc
@@ -25,13 +26,31 @@
 %%_________________________________________________________________________
 %% INPUTS              
 % Master image
-cd Input
-master = imread('INPUT_IMAGE_1.type'); % used for DIC
-orig_m = imread('INPUT_IMAGE_1.type'); % used for plotting
-% Slave image
-slave = imread('INPUT_IMAGE_2.type');
-orig_s = imread('INPUT_IMAGE_2.type');
-cd ..
+geotiff = 1; % choose if you want to forward geotiff information, no = 0, yes = 1;
+epsg = 21781; % EPSG code, specify in case you would like to forward geotiff information
+PCS = 'CH1903 / LV03'; % PCS code, specify in case you would like to forward geotiff information
+% Check here: https://spatialreference.org/ref/epsg/
+
+if geotiff == 0
+    cd Input
+    master = imread('1_1.png'); % used for DIC
+    orig_m = imread('1_1.png'); % used for plotting
+    % Slave image
+    slave = imread('1_6.png');
+    orig_s = imread('1_6.png');
+    cd ..
+end
+if geotiff == 1
+    cd Input
+    inputfilename = 'geotiff_2004';
+    outfilename = 'geotiff_DIC_2004-2007';
+    master = imread('geotiff_2004.tif'); % used for DIC
+    orig_m = imread('geotiff_2004.tif'); % used for plotting
+    % Slave image
+    slave = imread('geotiff_2007.tif');
+    orig_s = imread('geotiff_2007.tif');
+    cd ..
+end     
 %%_________________________________________________________________________
 %% Pre-processing: Wallis filter
 cd DIC
@@ -59,7 +78,7 @@ co_os = 1; % Image oversampling for Co-registration
 
 %% DIC parameters            
 % Offset type
-wi = 128;   % Window size [pix]
+wi = 64;   % Window size [pix]
 os = 1;     % Oversampling factor
 pix = 0.25; % Pixel size (in meters)
 
@@ -77,17 +96,17 @@ cut = wi; % window size/cut = cut off filter for a_mean filter, OPTIONAL
 
 % #3
 magcap = wi; % tolerance-diff, values which are greater as this value are cut [pixel]
-xcap = wi/8; % tolerance-diff, values which are greater as this value are cut [pixel]
-ycap = wi/8; % tolerance-diff, values which are greater as this value are cut [pixel]
+xcap = wi/4; % tolerance-diff, values which are greater as this value are cut [pixel]
+ycap = wi/4; % tolerance-diff, values which are greater as this value are cut [pixel]
 
 % #4
 med = [5 5]; % dimensions of median filter window [pixel]
 
 % Colorscale -------------------------------------------
 % min and max values for the X displacement colorscale, in meters
-scalax=[-5 5];
+scalax=[-4 4];
 % min and max values for the Y displacement colorscale, in meters
-scalay=[-5 5];
+scalay=[-4 4];
 
 % Additional definitions --------------------------------------------------
 coppia = 't1-t0';    
@@ -110,7 +129,8 @@ skip_y = wi/2; % half size of the window
 
         cd ..
         cd Output
-        t=load(['pr_',coppia,'.txt']); % load pixoff results [pix]
+        %t=load(['pr_',coppia,'.txt']); % load pixoff results [pix]
+        t = R;
         cd .. 
         cd DIC
         ii=1:numel(min(t(:,1)):skip_x:max(t(:,1))); jj=1:numel(min(t(:,2)):skip_x:max(t(:,2)));
@@ -152,9 +172,74 @@ skip_y = wi/2; % half size of the window
         %__________________________________________________________________
         toc
 %%_________________________________________________________________________
+%% Forwarding Geotiff information
+% Credits to F. Gluer & M. Haeusler, SED Zurich
+if geotiff == 1
+    [a,b] = size(J);
+    outfigure = reshape((sqrt(t(pp,3).^2+t(pp,4).^2)*pix),a,b);
+    outfigure=outfigure';
+    outfigure(:,end)=outfigure(:,a-1);
+
+    [RR] = geotiffinfo(sprintf('../Input/%s.tif',inputfilename));
+    %Create worldfile .tfw
+    P1=[RR.CornerCoords.X(4) RR.CornerCoords.Y(4)]; % P1: coordinates lower-left corner
+    P2=[RR.CornerCoords.X(3) RR.CornerCoords.Y(3)]; % Pn: coordinates [...]         
+    P4=[RR.CornerCoords.X(1) RR.CornerCoords.Y(1)];
+
+    r1 = sqrt((P1(1)-P4(1))^2+(P1(2)-P4(2))^2);                        
+    beta2 = 2*asin(sqrt((P1(1)-P4(1))^2+((P1(2)+r1)-P4(2))^2)/(2*r1)); % rotation angle of image
+    r2 = sqrt((P1(1)-P2(1))^2+(P1(2)-P2(2))^2);
+    alpha2 = 2*asin(sqrt(((P1(1)+r2)-P2(1))^2+(P1(2)-P2(2))^2)/(2*r2)); % rotation angle of image
+
+    size_pixel_x = r2/a; % distance of one pixel in x-direction [m]
+    size_pixel_y = r1/b; % distance of one pixel in y-direction [m]
+
+    % https://en.wikipedia.org/wiki/World_file
+    %     Line 1: A: x-component of the pixel width (x-scale)
+    %     Line 2: D: y-component of the pixel width (y-skew)
+    %     Line 3: B: x-component of the pixel height (x-skew)
+    %     Line 4: E: y-component of the pixel height (y-scale), typically negative
+    %     Line 5: C: x-coordinate of the center of the original image's upper left pixel transformed to the map
+    %     Line 6: F: y-coordinate of the center of the original image's upper left pixel transformed to the map
+
+    fid = fopen(sprintf('../Output/%s_worldfile.tfw',inputfilename), 'wt'); % write to .tfw worldfile
+    fprintf(fid, '%10.10f\n', size_pixel_x*cos(alpha2));
+    fprintf(fid, '%10.10f\n', -size_pixel_x*sin(alpha2));
+    fprintf(fid, '%10.10f\n', -size_pixel_y*sin(beta2));
+    fprintf(fid, '%10.10f\n', -size_pixel_y*cos(beta2));
+    fprintf(fid, '%10.10f\n', P4(1));
+    fprintf(fid, '%10.10f\n', P4(2));
+    fclose(fid);
+
+    R2 = worldfileread(sprintf('../Output/%s_worldfile.tfw',inputfilename),'planar',[b, a]);
+    if RR.PCS == 'CH1903 / LV03' % Swiss coordinate system
+        geotiffwrite(sprintf('../Output/%s',outfilename),outfigure,R2,'CoordRefSysCode',epsg);
+    else
+        try
+            RR.PCS == PCS; % desired coordinate system
+            geotiffwrite(sprintf('../Output/%s',outfilename),outfigure,R2,'CoordRefSysCode',epsg);
+        catch
+            print('Coordinate system not defined - please specify EPSG-code and PCS')
+        end
+    end
+end
+%%_________________________________________________________________________
 %% Plotting
-        % Plot 2D offset and displacement vectors 
-        if filter_selection == 1 % RSME threshold filter __________________
+% Multi-band reduction of input image, if required
+        [x, y, z] = size(orig_m);
+        if z > 3
+            orig_m_int(:,:,1) = orig_m(:,:,1);
+            orig_m_int(:,:,2) = orig_m(:,:,2);
+            orig_m_int(:,:,3) = orig_m(:,:,3);
+            orig_m = orig_m_int;
+        
+            orig_s_int(:,:,1) = orig_s(:,:,1);
+            orig_s_int(:,:,2) = orig_s(:,:,2);
+            orig_s_int(:,:,3) = orig_s(:,:,3);
+            orig_s = orig_s_int;
+        end
+% Plot 2D offset and displacement vectors 
+        if filter_selection == 1 % RMSE threshold filter __________________
         figure(1)
         
         h = subplot(2,2,1);
@@ -331,6 +416,6 @@ skip_y = wi/2; % half size of the window
         linkaxes([h,g,i,m], 'xy')     
         end
         cd ..
-        
+%% END OF SCRIPT        
 % MIT License
 % Copyright (c) 2018 Valentin Tertius Bickel & Andrea Manconi
