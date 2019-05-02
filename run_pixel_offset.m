@@ -26,7 +26,7 @@
 %%_________________________________________________________________________
 %% INPUTS              
 % Master image
-geotiff = 1; % choose if you want to forward geotiff information, no = 0, yes = 1;
+geotiff = 0; % choose if you want to forward geotiff information, no = 0, yes = 1;
 epsg = 21781; % EPSG code, specify in case you would like to forward geotiff information
 PCS = 'CH1903 / LV03'; % PCS code, specify in case you would like to forward geotiff information
 % Check here: https://spatialreference.org/ref/epsg/
@@ -42,10 +42,10 @@ if geotiff == 0
 end
 if geotiff == 1
     cd Input
-    inputfilename = 'geotiff_2004';
-    outfilename = 'geotiff_DIC_2004-2007';
-    master = imread('geotiff_2004.tif'); % used for DIC
-    orig_m = imread('geotiff_2004.tif'); % used for plotting
+    inputfilename = 'geotiff_2003';
+    outfilename = 'DIC_2003-2007';
+    master = imread('geotiff_2003.tif'); % used for DIC
+    orig_m = imread('geotiff_2003.tif'); % used for plotting
     % Slave image
     slave = imread('geotiff_2007.tif');
     orig_s = imread('geotiff_2007.tif');
@@ -78,7 +78,7 @@ co_os = 1; % Image oversampling for Co-registration
 
 %% DIC parameters            
 % Offset type
-wi = 64;   % Window size [pix]
+wi = 128;   % Window size [pix]
 os = 1;     % Oversampling factor
 pix = 0.25; % Pixel size (in meters)
 
@@ -176,12 +176,22 @@ skip_y = wi/2; % half size of the window
 % Credits to F. Gluer & M. Haeusler, SED Zurich
 if geotiff == 1
     [a,b] = size(J);
-    outfigure = reshape((sqrt(t(pp,3).^2+t(pp,4).^2)*pix),a,b);
-    outfigure=outfigure';
-    outfigure(:,end)=outfigure(:,a-1);
-
+    if filter_selection == 1
+        outfigure = reshape((sqrt(t(pp,3).^2+t(pp,4).^2)*pix),a,b);
+        outfigure=outfigure';
+        outfigure(:,end)=outfigure(:,a-1);
+    end
+    if filter_selection == 2
+        outfigure = reshape((sqrt(tpostfiltx.^2+tpostfilty.^2)*pix),a,b);
+        outfigure=outfigure';
+        outfigure(:,end)=outfigure(:,a-1);       
+    end
+    if filter_selection == 3
+        outfigure = reshape((tot_check(:,5)*pix),a,b);
+        outfigure=outfigure';
+        outfigure(:,end)=outfigure(:,a-1);    end
     [RR] = geotiffinfo(sprintf('../Input/%s.tif',inputfilename));
-    %Create worldfile .tfw
+    % Create worldfile .tfw
     P1=[RR.CornerCoords.X(4) RR.CornerCoords.Y(4)]; % P1: coordinates lower-left corner
     P2=[RR.CornerCoords.X(3) RR.CornerCoords.Y(3)]; % Pn: coordinates [...]         
     P4=[RR.CornerCoords.X(1) RR.CornerCoords.Y(1)];
@@ -225,7 +235,7 @@ if geotiff == 1
 end
 %%_________________________________________________________________________
 %% Plotting
-% Multi-band reduction of input image, if required
+% Multi-band reduction of input images, if required
         [x, y, z] = size(orig_m);
         if z > 3
             orig_m_int(:,:,1) = orig_m(:,:,1);
