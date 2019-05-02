@@ -24,8 +24,7 @@
 
 V. T. Bickel & A. Manconi, May 2nd 2018
 
-valentin.bickel@erdw.ethz.ch / andrea.manconi@erdw.ethz.ch
-
+[valentin.bickel@erdw.ethz.ch / andrea.manconi@erdw.ethz.ch]
 ETH Zurich / MPS Goettingen
 
 ##### MIT License - Copyright (c) 2018 Valentin Tertius Bickel & Andrea Manconi
@@ -33,6 +32,12 @@ Please cite this routine as:
 #### Bickel, V.T.; Manconi, A.; Amann, F. Quantitative Assessment of Digital Image Correlation Methods to Detect and Monitor Surface Displacements of Large Slope Instabilities. Remote Sens. 2018, 10, 865.
 http://www.mdpi.com/2072-4292/10/6/865
 ________________________________________________________________________________________________________
+
+### Tool used by:
+- Engineering Geology Department, ETH Zurich, Switzerland
+- Swiss Seismological Service, ETH Zurich, Switzerland
+- Department Planets and Comets, Max Planck Institute for Solar System Reserch, Germany
+
 
 ### Required Matlab toolboxes:
 - MATLAB R2017a
