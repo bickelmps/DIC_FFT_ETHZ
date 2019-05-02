@@ -236,7 +236,7 @@ specify the search window skip in y direction (N-S, up-down) - be aware of alias
 
 <img src="https://github.com/bickelmps/DIC_FFT_ETHZ/blob/master/Figures/glacier.gif?raw=true">
 
-<img src="https://github.com/bickelmps/DIC_FFT_ETHZ/blob/master/Figures/new_figure.png?raw=true">
+<img src="https://github.com/bickelmps/DIC_FFT_ETHZ/blob/master/Figures/new_figure.PNG?raw=true">
 
 ------------------
 ##### MIT License - Copyright (c) 2018 Valentin Tertius Bickel & Andrea Manconi
