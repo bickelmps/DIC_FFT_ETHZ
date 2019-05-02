@@ -126,8 +126,8 @@ License included in "DIC/dft_registration_license.txt"
 ## Input Parameter Description
 
           Inputs ----------------------------------------------------------------------------------
-               - geotiff = 
-               - epsg = 
+               - geotiff = indicate here, if you would like to forward geotiff information (=1) or not (=0)
+               - epsg = in case you would like to forward geotiff information, enter the desired EPSG code here - you can get this number here: https://spatialreference.org/ref/epsg/
                - PCS = 
                - master = 
                - orig_m = 
