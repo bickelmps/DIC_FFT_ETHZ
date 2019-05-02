@@ -70,7 +70,7 @@ License included in "DIC/dft_registration_license.txt"
 3. Customize setup for Preprocessing, DIC, and Postprocessing in run_pixel_offset.m, using the following variables. More information about the variables further below:
 
           Inputs ----------------------------------------------------------------------------------
-               - geotiff = 0/1
+               ##### geotiff = 0/1
                - epsg = int.
                - PCS = 'string'
                - master = 'string'
