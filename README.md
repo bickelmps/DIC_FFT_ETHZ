@@ -126,7 +126,6 @@ License included in "DIC/dft_registration_license.txt"
 ## Input Parameter Description
 ### Inputs
 #### geotiff
-
 indicate here, if you would like to forward geotiff information (=1) or not (=0)
 
 #### epsg
@@ -137,33 +136,64 @@ in case you would like to forward geotiff information, enter the desired EPSG co
 in case you would like to forward geotiff information, enter the desired Projected CS Parameter Keys
 here - this info might be stored in your image!
 
-               - master = 
-               - orig_m = 
-               - slave = 
-               - orig_s = 
-               - inputfilename = 
-               - outfilename = 
+#### master
+Enter the name of the old image here, including the file type
 
-          Preprocessing (Wallis filter & Co-registration) -----------------------------------------
-               - wallis = 
-               - win = 
-               - tarm = 
-               - tars = 
-               - b = 
-               - c = 
+#### orig_m
+Enter the name of the old image here, including the file type
 
-               - sp = 
-               - co_os = 
+#### slave
+Enter the name of the new image here, including the file type
 
-          DIC -------------------------------------------------------------------------------------
-               - wi = 
-               - os = 
-               - pix = 
+#### orig_s
+Enter the name of the new image here, including the file type
 
-          Postprocessing (RMSE, Mean, Vector, Median filter) --------------------------------------
-               - filter = 
+#### inputfilename
+Enter the name of any image that holds geo-information here, excluding the file type
 
-               - thr = 
+#### outfilename
+Choose the name of the displacement magnitude map file here
+
+### Preprocessing (Wallis filter & Co-registration)
+#### wallis
+indicate here, if you would like to apply a Wallis filter (=1) or not (=0)
+
+#### win
+specify Wallis filter window size, use even numbers only! A larger window will result in a larger context being considered for the dynamic contrast adaptation
+
+#### tarm
+specify the target mean value within each individual window - this mainly controls the image brightness (use the histogram of the filtered image to adapt the filter settings)
+
+#### tars
+specify the target standard deviation within each individual window - this mainly controls the radiometric normal distribution and contrast (use the histogram of the filtered image to adapt the filter settings)
+
+#### b
+specify the brightness enforcing constant (use the histogram of the filtered image to adapt the filter settings)
+
+#### c
+specify the contrast enforcing constant (use the histogram of the filtered image to adapt the filter settings)
+
+#### sp
+define the desired image split that is being used for the Co-Registration - 1  means that the entire image is matched, e.g. 8 means that the image is divided in 8 sub-parts, while every individual sub-image is being matched, where the mean correction of all 8 tiles will be used for Co-Registration
+
+#### co_os
+apply a oversampling factor for the Co-Registration, if desired - theoretically, a larger oversampling factor will result in a more accurate (sub-pixel) Co-Registration - in practice, a factor of 1 or max. 4 will be sufficient
+
+### DIC
+#### wi
+specify the desired window size - a larger window will produce a better correlation and a better coverage of the displacement; a smaller window size helps to resolve smaller spatial scales of the displacement to the cost of a higher noise level; accuracy of the derived displacement is not influenced by the window size, see: http://www.mdpi.com/2072-4292/10/6/865
+               
+#### os
+specify the oversampling factor of the FFT correlator - theoretically, a larger oversampling factor will result in a more accurate correlation (sub-pixel) - in practice, a factor of 1 or max. 4 will be sufficient, see http://www.mdpi.com/2072-4292/10/6/865
+
+#### pix
+enter the spatial resolution (GSD) of the used images in m/pixel
+
+### Postprocessing (RMSE, Mean, Vector, Median filter)
+#### filter
+choose whether you would like to use the RMSE filter (=1), the arithmetic mean filter (=2), the spatial vector filter (=3), or the median filter (=4) - the filters are described here: http://www.mdpi.com/2072-4292/10/6/865
+
+thr = 
 
                - mfws = 
                - cut = 
