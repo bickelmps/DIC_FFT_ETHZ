@@ -181,7 +181,7 @@ apply a oversampling factor for the Co-Registration, if desired - theoretically,
 
 ### DIC
 #### wi
-specify the desired window size - a larger window will produce a better correlation and a better coverage of the displacement; a smaller window size helps to resolve smaller spatial scales of the displacement to the cost of a higher noise level; accuracy of the derived displacement is not influenced by the window size, see: http://www.mdpi.com/2072-4292/10/6/865
+specify the desired window size in pixels; stick to the 'power of 2 rule' - a larger window will produce a better correlation and a better coverage of the displacement; a smaller window size helps to resolve smaller spatial scales of the displacement to the cost of a higher noise level; accuracy of the derived displacement is not influenced by the window size, see: http://www.mdpi.com/2072-4292/10/6/865
                
 #### os
 specify the oversampling factor of the FFT correlator - theoretically, a larger oversampling factor will result in a more accurate correlation (sub-pixel) - in practice, a factor of 1 or max. 4 will be sufficient, see http://www.mdpi.com/2072-4292/10/6/865
@@ -193,25 +193,42 @@ enter the spatial resolution (GSD) of the used images in m/pixel
 #### filter
 choose whether you would like to use the RMSE filter (=1), the arithmetic mean filter (=2), the spatial vector filter (=3), or the median filter (=4) - the filters are described here: http://www.mdpi.com/2072-4292/10/6/865
 
-thr = 
+#### thr
+specify the RMSE threshold - a higher value will result in a strict filter, whereas a lower value will let pass values with a lower correlation quality (RMSE); a thr = 1 will result in a leaky filter, i.e., no filtering is performed at all - use this when you want to avoid any influence of a post-processing routine!
 
-               - mfws = 
-               - cut = 
+#### mfws
+specify the mean filter window size in pixels - a larger window will result in a strongly blurred displacement map
+
+#### cut
+specify the mean filter cutoff value in pixels - this can be used to eliminate extreme noise that otherwise would mess with the mean filter
  
-               - magcap = 
-               - xcap = 
-               - ycap = 
+#### magcap
+specify the magnitude (resultant) cap in pixels - values which are greater as this value are cut
 
-               - med = 
+#### xcap
+specify the x direction (E-W, left-right) cap in pixels - values which are greater as this value are cut
 
-           Additional settings --------------------------------------------------------------------
-               - scalax = 
-               - scalay = 
+#### ycap
+specify the y direction (N-S, up-down) cap in pixels - values which are greater as this value are cut
 
-               - coppia = 
+#### med
+specify the median filter window size in pixels - a larger window will result in a strongly blurred displacement map
 
-               - skip_x = 
-               - skip_y = 
+### Additional settings
+#### scalax
+specify the Min and Max values in x direction (E-W, left-right) that will be displayed in meters - everything above and below this range will be saturated at the given Min / Max value; in general, this range should be small for slow displacements and large for fast displacements; at the same time, regions with heterogeneous displacement velocities could require to this code with different ranges in order to catch the entire variety of displacement velocities!
+
+#### scalay
+specify the Min and Max values in y direction (N-S, up-down) that will be displayed in meters - everything above and below this range will be saturated at the given Min / Max value; in general, this range should be small for slow displacements and large for fast displacements; at the same time, regions with heterogeneous displacement velocities could require to this code with different ranges in order to catch the entire variety of displacement velocities!
+
+#### coppia
+provide a name for the ascii file that contains the displacement information (Output folder)
+
+#### skip_x
+specify the search window skip in x direction (E-W, left-right) - be aware of aliasing effects when going below the Nyquist limit (default)!
+
+#### skip_y
+specify the search window skip in y direction (N-S, up-down) - be aware of aliasing effects when going below the Nyquist limit (default)!
 
 ### Possible results
 
