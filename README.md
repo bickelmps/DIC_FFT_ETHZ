@@ -1,16 +1,16 @@
 ﻿
 # Digital Image Correlation using an FFT-approach
 
-#### State of the Art - for 8bit, equal dim, single- and multi-channel images
+#### State of the Art - for 8bit, equal dim, single- and multi-channel images, with on-demand geotiff information forwarding
 
-#### Quantify displacement of features in a series of images over time & retrieve displacement velocities. Output data include CVP 2D-displacement maps, the displacement resultant (magnitude), and displacement vectors.
+#### Quantify displacement of features in a series of images over time & retrieve displacement velocities. Output data include CVP 2D-displacement maps, the displacement resultant (magnitude), displacement vectors, as well as a geo-rectified GIS-ready map (optional).
 #### Built-in pre-processing routines:
 (1) Wallis Filter: Dynamic Contrast Enhancement of both input images; improves the quality of the FFT correlation significantly and helps to suppress noise.
 
 (2) Sub-Pixel Co-Registration: Aligns both input images on a sub-pixel level; significantly improves the quality of the correlation and the absolute accuracy of the displacement measurement.
 
 #### Built-in post-processing routines:
-(1) RSME Threshold Filter: Filters DIC output based on a RMSE threshold.
+(1) RMSE Threshold Filter: Filters DIC output based on a RMSE threshold.
 
 (2) Mean Filter: Filters DIC output with a algorithmic mean kernel.
 
