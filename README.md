@@ -73,10 +73,10 @@ License included in "DIC/dft_registration_license.txt"
                - geotiff = 0/1
                - epsg = int.
                - PCS = 'string'
-               - master = 'string' (name of master.type);
-               - orig_m = 'string' (name of master.type);
-               - slave = 'string' (name of slave.type);
-               - orig_s = 'string' (name of slave.type);
+               - master = 'string'
+               - orig_m = 'string'
+               - slave = 'string'
+               - orig_s = 'string'
                - inputfilename = 'string'
                - outfilename = 'string'
 
