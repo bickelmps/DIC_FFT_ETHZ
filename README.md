@@ -67,7 +67,7 @@ License included in "DIC/dft_registration_license.txt"
 
 2. Place Master and Slave image(s) in the "Input" folder (or copy images from 'Example' folder for a demo)
 
-3. Customize setup for Preprocessing, DIC, and Postprocessing in run_pixel_offset.m, using the following variables. More information about the variables further below:
+3. Customize setup for Preprocessing, DIC, and Postprocessing in run_pixel_offset.m, using the following variables. More information about the variables can be found further below:
 
           Inputs ----------------------------------------------------------------------------------
                - geotiff = 0/1
