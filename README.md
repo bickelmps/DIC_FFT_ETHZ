@@ -123,6 +123,58 @@ License included in "DIC/dft_registration_license.txt"
 
 - Collect displacement matrix ascii and deformation magnitude map tif from "Output" folder for further utilization of results (e.g. GIS)
 
+## Input Parameter Description
+
+          Inputs ----------------------------------------------------------------------------------
+               - geotiff = 
+               - epsg = 
+               - PCS = 
+               - master = 
+               - orig_m = 
+               - slave = 
+               - orig_s = 
+               - inputfilename = 
+               - outfilename = 
+
+          Preprocessing (Wallis filter & Co-registration) -----------------------------------------
+               - wallis = 
+               - win = 
+               - tarm = 
+               - tars = 
+               - b = 
+               - c = 
+
+               - sp = 
+               - co_os = 
+
+          DIC -------------------------------------------------------------------------------------
+               - wi = 
+               - os = 
+               - pix = 
+
+          Postprocessing (RMSE, Mean, Vector, Median filter) --------------------------------------
+               - filter = 
+
+               - thr = 
+
+               - mfws = 
+               - cut = 
+ 
+               - magcap = 
+               - xcap = 
+               - ycap = 
+
+               - med = 
+
+           Additional settings --------------------------------------------------------------------
+               - scalax = 
+               - scalay = 
+
+               - coppia = 
+
+               - skip_x = 
+               - skip_y = 
+
 ### Possible results
 
 ##### Advancing glacier, one image per day:
