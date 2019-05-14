@@ -7,7 +7,7 @@
 
 <img src="https://github.com/bickelmps/DIC_FFT_ETHZ/blob/master/Figures/example3.png?raw=true">
 
-##### Figure. DIC_FFT application example for a slope instability in the Swiss Alps: (a) Optical image: slope instability displacement field over 19 years returned using DIC_FFT, plotted on a hillshade. Images taken by an ebee drone (fixed wing). Blank areas indicate portions of the slope with displacements below DIC accuracy or without information. All runs were performed with a scan window size of 64 × 64 pixels and a spatial vector filter. (b) Interpolation of the Cuolm da Vi displacement field based on 23 GNSS measurements as direct validation. Blank areas indicate portions of the slope without information or with deformations below DIC accuracy. Results shows good agreement with the results produced using DIC_FFT, while DIC_FFT produces a much higher spatial resolution. Modified from Bickel et al., 2018.
+##### Figure. DIC_FFT application example for a slope instability in the Swiss Alps: (a) Optical image: slope instability displacement field over 19 years returned using DIC_FFT, plotted on a hillshade. Images taken by an ebee drone (fixed wing). Blank areas indicate portions of the slope with displacements below DIC accuracy or without information. All runs were performed with a scan window size of 64 × 64 pixels and a spatial vector filter. (b) Interpolation of the Cuolm da Vi displacement field based on 23 GNSS measurements as direct validation. Blank areas indicate portions of the slope without information or with deformations below DIC accuracy. Results shows good agreement with the results produced using DIC_FFT, while DIC_FFT produces a much higher spatial resolution. Modified from Bickel et al., 2018. More examples at the bottom of the readme!
 
 #### Built-in pre-processing routines:
 (1) Wallis Filter: Dynamic Contrast Enhancement of both input images; improves the quality of the FFT correlation significantly and helps to suppress noise.
@@ -25,7 +25,7 @@
 
 <img src="https://github.com/bickelmps/DIC_FFT_ETHZ/blob/master/Figures/glacier.gif?raw=true">
 
-##### Figure. Example of DIC_FFT application for glacier displacement monitoring. The subplots show 1) master and 2) slave images, 3) the displacement magnitude, as well as 4) the displacement vectors.
+##### Figure. Example of DIC_FFT application for glacier displacement monitoring. The subplots show 1) master and 2) slave images, 3) the displacement magnitude, as well as 4) the displacement vectors. More examples at the bottom of the readme!
 -----------------------------------
 
 V. T. Bickel & A. Manconi, May 2nd 2018
