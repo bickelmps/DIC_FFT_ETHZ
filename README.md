@@ -18,6 +18,7 @@
 
 (4) Vector Filter: Filters DIC output based on the pixel neighborhood's displacement vector direction & magnitude.
 
+<img src="https://github.com/bickelmps/DIC_FFT_ETHZ/blob/master/Figures/example1.png?raw=true">
 <img src="https://github.com/bickelmps/DIC_FFT_ETHZ/blob/master/Figures/glacier.gif?raw=true">
 
 -----------------------------------
