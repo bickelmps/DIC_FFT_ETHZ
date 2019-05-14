@@ -25,7 +25,7 @@
 
 <img src="https://github.com/bickelmps/DIC_FFT_ETHZ/blob/master/Figures/glacier.gif?raw=true">
 
-##### Figure. Example of DIC_FFT application for glacier displacement monitoring.
+##### Figure. Example of DIC_FFT application for glacier displacement monitoring. The subplots show 1) master and 2) slave images, 3) the displacement magnitude, as well as 4) the displacement vectors.
 -----------------------------------
 
 V. T. Bickel & A. Manconi, May 2nd 2018
