@@ -7,7 +7,7 @@
 
 <img src="https://github.com/bickelmps/DIC_FFT_ETHZ/blob/master/Figures/example3.png?raw=true">
 
-##### Figure. DIC_FFT application example for a slope instability in the Swiss Alps: (a) Optical image: slope instability displacement field over 19 years returned using DIC_FFT, plotted on a hillshade. Images taken by an ebee drone (fixed wing). Blank areas indicate portions of the slope with displacements below DIC accuracy or without information. All runs were performed with a scan window size of 64 × 64 pixels and a spatial vector filter. (b) Interpolation of the Cuolm da Vi displacement field based on 23 GNSS measurements as direct validation. Blank areas indicate portions of the slope without information or with deformations below DIC accuracy. Results shows good agreement with the results produced using DIC_FFT, while DIC_FFT produces a much higher spatial resolution. Modified from Bickel et al., 2018. More examples at the bottom of the readme!
+##### Figure. DIC_FFT application example for a slope instability in the Swiss Alps: (a) Optical image: slope instability displacement field over 19 years returned using DIC_FFT, plotted on a hillshade. Images taken by an ebee drone (fixed wing). Blank areas indicate portions of the slope with displacements below DIC accuracy or without information. All runs were performed with a scan window size of 64 × 64 pixels and a spatial vector filter. (b) Interpolation of the Cuolm da Vi displacement field based on 23 GNSS measurements as direct validation. Results shows good agreement with the results produced using DIC_FFT, while DIC_FFT produces a much higher spatial resolution. Modified from Bickel et al., 2018. More examples at the bottom of the readme!
 
 #### Built-in pre-processing routines:
 (1) Wallis Filter: Dynamic Contrast Enhancement of both input images; improves the quality of the FFT correlation significantly and helps to suppress noise.
@@ -200,7 +200,7 @@ enter the spatial resolution (GSD) of the used images in m/pixel
 choose whether you would like to use the RMSE filter (=1), the arithmetic mean filter (=2), the spatial vector filter (=3), or the median filter (=4) - the filters are described here: http://www.mdpi.com/2072-4292/10/6/865
 
 #### thr
-specify the RMSE threshold - a higher value will result in a strict filter, whereas a lower value will let pass values with a lower correlation quality (RMSE); a thr = 1 will result in a leaky filter, i.e., no filtering is performed at all - use this when you want to avoid any influence of a post-processing routine!
+specify the RMSE threshold - a lower value will result in a strict filter, whereas a higher value will let pass values with a lower correlation quality (RMSE); a thr = 1 will result in a leaky filter, i.e., no filtering is performed at all - use this when you want to avoid any influence of a post-processing routine!
 
 #### mfws
 specify the mean filter window size in pixels - a larger window will result in a strongly blurred displacement map
