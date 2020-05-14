@@ -46,6 +46,7 @@ ________________________________________________________________________________
 - Department Planets and Comets, Max Planck Institute for Solar System Research, Germany
 - Landslide Research Group, Technical University of Munich, Germany
 - Department of Engineering Geology and Hydrogeology, RWTH Aachen, Germany
+- School of Earth and Environment, University of Canterbury, New Zealand
 - [...] 
 
 
