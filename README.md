@@ -87,13 +87,12 @@ Online: https://de.mathworks.com/matlabcentral/fileexchange/8998-surface-fitting
           Inputs ----------------------------------------------------------------------------------
                - geotiff = 0/1
                - epsg = int.
-               - PCS = 'string'
+               - coreg = 0/1
+               - way = 1/2
+               - yourtext = 'string'
+               - pix = float.
                - master = 'string'
-               - orig_m = 'string'
                - slave = 'string'
-               - orig_s = 'string'
-               - inputfilename = 'string'
-               - outfilename = 'string'
 
           Preprocessing (Wallis filter & Co-registration) -----------------------------------------
                - wallis = 0/1
@@ -136,7 +135,7 @@ Online: https://de.mathworks.com/matlabcentral/fileexchange/8998-surface-fitting
 
 4. Execute run_pixel_offset.m
 
-5. Collect displacement matrix ascii and deformation magnitude map tif from "Output" folder for further utilization of results (e.g. drag & drop into a GIS)
+5. Collect displacement matrices ascii and deformation magnitude preview tif from "Output" folder for further utilization of results (e.g. drag & drop into a GIS). See "Graphical Abstract" for the organization of the output.
 
 ## Input Parameter Description
 ### Inputs   - - - - - - - - - -
