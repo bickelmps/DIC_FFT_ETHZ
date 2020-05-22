@@ -146,27 +146,23 @@ indicate here, if you would like to forward geotiff information (=1) or not (=0)
 in case you would like to forward geotiff information, enter the desired EPSG code here
 --> you can get this number here: https://spatialreference.org/ref/epsg/
 
-#### PCS
-in case you would like to forward geotiff information, enter the desired Projected CS Parameter Keys
-here - this info might be stored in your image!
+#### coreg
+indicate here, if you would like to manually select a region for the alignment (=1) or not (=0)
+
+#### way
+specify is you want the geotiff preview to be 8bit or 16bit
+
+#### yourtext
+insert a name for your output files
+
+#### pix
+insert the spatial resolution of the images used (GSD) in m/pixel
 
 #### master
 Enter the name of the old image here, including the file type
 
-#### orig_m
-Enter the name of the old image here, including the file type
-
 #### slave
 Enter the name of the new image here, including the file type
-
-#### orig_s
-Enter the name of the new image here, including the file type
-
-#### inputfilename
-Enter the name of any image that holds geo-information here, excluding the file type
-
-#### outfilename
-Choose the name of the displacement magnitude map file here
 
 ### Preprocessing (Wallis filter & Co-registration)   - - - - - - - - - -
 #### wallis
