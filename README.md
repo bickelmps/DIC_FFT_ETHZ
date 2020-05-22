@@ -5,9 +5,9 @@
 
 #### Quantify displacement of features (landslides, glaciers, etc.) in a series of images over time & retrieve displacement velocities and directions. Output data include CVP 2D-displacement maps, displacement vectors, as well as geo-rectified GIS-ready (.tif and .txt) output (optional).
 
-V. T. Bickel & A. Manconi, May 2nd 2018 [valentin.bickel@erdw.ethz.ch / andrea.manconi@erdw.ethz.ch]
+V. T. Bickel & A. Manconi, May 2nd 2018 | ETH Zurich / MPS Goettingen
 
-ETH Zurich / MPS Goettingen
+Please direct bugs/questions/feedback to: [valentin.bickel@erdw.ethz.ch / andrea.manconi@erdw.ethz.ch]
 ________________________________________________________________________________________________________
 Please cite this routine as:
 #### Bickel, V.T.; Manconi, A.; Amann, F. Quantitative Assessment of Digital Image Correlation Methods to Detect and Monitor Surface Displacements of Large Slope Instabilities. Remote Sens. 2018, 10, 865.
