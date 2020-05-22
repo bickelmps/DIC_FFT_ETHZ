@@ -19,7 +19,7 @@ http://www.mdpi.com/2072-4292/10/6/865
 
 ## Graphical Abstract
 <img src="https://github.com/bickelmps/DIC_FFT_ETHZ/blob/master/Figures/graphic.png?raw=true">
-
+________________________________________________________________________________________________________
 #### Built-in pre-processing routines:
 (1) Wallis Filter: Dynamic Contrast Enhancement of both input images; improves the quality of the FFT correlation significantly and helps to suppress noise.
 
@@ -244,7 +244,7 @@ specify the search window skip in x direction (E-W, left-right) - be aware of al
 #### skip_y
 specify the search window skip in y direction (N-S, up-down) - be aware of aliasing effects when going below the Nyquist limit (default)!
 
-### Possible results
+### Selection of results
 
 <img src="https://github.com/bickelmps/DIC_FFT_ETHZ/blob/master/Figures/example2.png?raw=true">
 
