@@ -3,12 +3,9 @@
 
 #### State of the Art, validated, and calibrated DIC tool - for 8bit, equal dim, single- and multi-channel images, with on-demand geotiff information forwarding
 
-#### Quantify displacement of features (landslides, glaciers, etc.) in a series of images over time & retrieve displacement velocities and directions. Output data include CVP 2D-displacement maps, displacement vectors, as well as a geo-rectified GIS-ready (.tif and .txt) output (optional).
+#### Quantify displacement of features (landslides, glaciers, etc.) in a series of images over time & retrieve displacement velocities and directions. Output data include CVP 2D-displacement maps, displacement vectors, as well as geo-rectified GIS-ready (.tif and .txt) output (optional).
 
-V. T. Bickel & A. Manconi, May 2nd 2018
-
-[valentin.bickel@erdw.ethz.ch / andrea.manconi@erdw.ethz.ch]
-
+V. T. Bickel & A. Manconi, May 2nd 2018 [valentin.bickel@erdw.ethz.ch / andrea.manconi@erdw.ethz.ch]
 ETH Zurich / MPS Goettingen
 
 Please cite this routine as:
