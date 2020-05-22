@@ -9,6 +9,8 @@
 
 ##### Figure. DIC_FFT application example for a slope instability in the Swiss Alps: (a) slope instability displacement field over 19 years returned using DIC_FFT and two optical images, plotted on a hillshade. Images taken by an ebee drone (fixed wing) and from a plane. Blank areas indicate portions of the slope with displacements below DIC accuracy or without information. All runs were performed with a scan window size of 64 × 64 pixels and a spatial vector filter. (b) Interpolation of the Cuolm da Vi slope displacement field based on 23 GNSS measurements as direct validation. Results shows good agreement with the results produced using DIC_FFT, while DIC_FFT produces a much higher spatial resolution: The fast-moving section visible in the West of the area failed in 2016; using GNSS data alone, the pre-failure displacement is not visible. Modified from Bickel et al., 2018. More examples at the bottom of the readme!
 
+<img src="https://github.com/bickelmps/DIC_FFT_ETHZ/blob/master/Figures/graphic.png?raw=true">
+
 #### Built-in pre-processing routines:
 (1) Wallis Filter: Dynamic Contrast Enhancement of both input images; improves the quality of the FFT correlation significantly and helps to suppress noise.
 
