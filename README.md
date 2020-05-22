@@ -20,6 +20,7 @@ http://www.mdpi.com/2072-4292/10/6/865
 ## Graphical Abstract
 <img src="https://github.com/bickelmps/DIC_FFT_ETHZ/blob/master/Figures/graphic.png?raw=true">
 ________________________________________________________________________________________________________
+
 #### Built-in pre-processing routines:
 (1) Wallis Filter: Dynamic Contrast Enhancement of both input images; improves the quality of the FFT correlation significantly and helps to suppress noise.
 
