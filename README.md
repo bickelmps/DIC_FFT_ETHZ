@@ -3,12 +3,24 @@
 
 #### State of the Art, validated, and calibrated DIC tool - for 8bit, equal dim, single- and multi-channel images, with on-demand geotiff information forwarding
 
-#### Quantify displacement of features (landslides, glaciers, etc.) in a series of images over time & retrieve displacement velocities. Output data include CVP 2D-displacement maps, the displacement resultant (magnitude), displacement vectors, as well as a geo-rectified GIS-ready map (optional).
+#### Quantify displacement of features (landslides, glaciers, etc.) in a series of images over time & retrieve displacement velocities and directions. Output data include CVP 2D-displacement maps, displacement vectors, as well as a geo-rectified GIS-ready (.tif and .txt) output (optional).
+
+V. T. Bickel & A. Manconi, May 2nd 2018
+
+[valentin.bickel@erdw.ethz.ch / andrea.manconi@erdw.ethz.ch]
+
+ETH Zurich / MPS Goettingen
+
+##### MIT License - Copyright (c) 2018 Valentin Tertius Bickel & Andrea Manconi
+Please cite this routine as:
+#### Bickel, V.T.; Manconi, A.; Amann, F. Quantitative Assessment of Digital Image Correlation Methods to Detect and Monitor Surface Displacements of Large Slope Instabilities. Remote Sens. 2018, 10, 865.
+http://www.mdpi.com/2072-4292/10/6/865
 
 <img src="https://github.com/bickelmps/DIC_FFT_ETHZ/blob/master/Figures/example3.png?raw=true">
 
 ##### Figure. DIC_FFT application example for a slope instability in the Swiss Alps: (a) slope instability displacement field over 19 years returned using DIC_FFT and two optical images, plotted on a hillshade. Images taken by an ebee drone (fixed wing) and from a plane. Blank areas indicate portions of the slope with displacements below DIC accuracy or without information. All runs were performed with a scan window size of 64 × 64 pixels and a spatial vector filter. (b) Interpolation of the Cuolm da Vi slope displacement field based on 23 GNSS measurements as direct validation. Results shows good agreement with the results produced using DIC_FFT, while DIC_FFT produces a much higher spatial resolution: The fast-moving section visible in the West of the area failed in 2016; using GNSS data alone, the pre-failure displacement is not visible. Modified from Bickel et al., 2018. More examples at the bottom of the readme!
 
+## Graphical Abstract
 <img src="https://github.com/bickelmps/DIC_FFT_ETHZ/blob/master/Figures/graphic.png?raw=true">
 
 #### Built-in pre-processing routines:
@@ -28,18 +40,6 @@
 <img src="https://github.com/bickelmps/DIC_FFT_ETHZ/blob/master/Figures/glacier.gif?raw=true">
 
 ##### Figure. Example of DIC_FFT application for glacier displacement monitoring. The subplots show 1) master and 2) slave images, 3) the displacement magnitude, as well as 4) the displacement vectors. More examples at the bottom of the readme!
------------------------------------
-
-V. T. Bickel & A. Manconi, May 2nd 2018
-
-[valentin.bickel@erdw.ethz.ch / andrea.manconi@erdw.ethz.ch]
-
-ETH Zurich / MPS Goettingen
-
-##### MIT License - Copyright (c) 2018 Valentin Tertius Bickel & Andrea Manconi
-Please cite this routine as:
-#### Bickel, V.T.; Manconi, A.; Amann, F. Quantitative Assessment of Digital Image Correlation Methods to Detect and Monitor Surface Displacements of Large Slope Instabilities. Remote Sens. 2018, 10, 865.
-http://www.mdpi.com/2072-4292/10/6/865
 ________________________________________________________________________________________________________
 
 ### Tool is being used by:
@@ -65,6 +65,12 @@ Online: https://de.mathworks.com/matlabcentral/fileexchange/18401-efficient-subp
 License included in "DIC/dft_registration_license.txt"
 
 - wallis_filter.m,   underlying principle taken from Baltsavias, E. P. "Multiphoto geometrically constrained matching." Doctoral Thesis, ETH Zurich, (1991).
+
+- saveascii.m, by Carlos Adrian Vargas Aguilera
+Online: https://de.mathworks.com/matlabcentral/fileexchange/10243-saveascii-m-v6-2-oct-2009 (Status: May 22nd, 2020)
+
+- gridfit.m, by John D'Errico
+Online: https://de.mathworks.com/matlabcentral/fileexchange/8998-surface-fitting-using-gridfit (Status: May 22nd, 2020)
 
 
 ### Hardware requirements:
