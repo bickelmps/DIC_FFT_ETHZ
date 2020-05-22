@@ -7,7 +7,7 @@
 
 V. T. Bickel & A. Manconi, May 2nd 2018 [valentin.bickel@erdw.ethz.ch / andrea.manconi@erdw.ethz.ch]
 ETH Zurich / MPS Goettingen
-
+________________________________________________________________________________________________________
 Please cite this routine as:
 #### Bickel, V.T.; Manconi, A.; Amann, F. Quantitative Assessment of Digital Image Correlation Methods to Detect and Monitor Surface Displacements of Large Slope Instabilities. Remote Sens. 2018, 10, 865.
 http://www.mdpi.com/2072-4292/10/6/865
