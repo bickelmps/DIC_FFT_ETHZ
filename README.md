@@ -11,10 +11,10 @@ V. T. Bickel & A. Manconi, May 2nd 2018
 
 ETH Zurich / MPS Goettingen
 
-##### MIT License - Copyright (c) 2018 Valentin Tertius Bickel & Andrea Manconi
 Please cite this routine as:
 #### Bickel, V.T.; Manconi, A.; Amann, F. Quantitative Assessment of Digital Image Correlation Methods to Detect and Monitor Surface Displacements of Large Slope Instabilities. Remote Sens. 2018, 10, 865.
 http://www.mdpi.com/2072-4292/10/6/865
+##### MIT License - Copyright (c) 2018 Valentin Tertius Bickel & Andrea Manconi
 
 <img src="https://github.com/bickelmps/DIC_FFT_ETHZ/blob/master/Figures/example3.png?raw=true">
 
@@ -66,10 +66,10 @@ License included in "DIC/dft_registration_license.txt"
 
 - wallis_filter.m,   underlying principle taken from Baltsavias, E. P. "Multiphoto geometrically constrained matching." Doctoral Thesis, ETH Zurich, (1991).
 
-- saveascii.m, by Carlos Adrian Vargas Aguilera
+- saveascii.m, by Carlos Adrian Vargas Aguilera.
 Online: https://de.mathworks.com/matlabcentral/fileexchange/10243-saveascii-m-v6-2-oct-2009 (Status: May 22nd, 2020)
 
-- gridfit.m, by John D'Errico
+- gridfit.m, by John D'Errico.
 Online: https://de.mathworks.com/matlabcentral/fileexchange/8998-surface-fitting-using-gridfit (Status: May 22nd, 2020)
 
 
@@ -256,10 +256,6 @@ specify the search window skip in y direction (N-S, up-down) - be aware of alias
 <img src="https://github.com/bickelmps/DIC_FFT_ETHZ/blob/master/Figures/example1.png?raw=true">
 
 ##### Figure. DIC_FFT applied on Sentinel-1 and Sentinel-2 datasets over the Moosfluh unstable slope. White boundary delineates the approximate area of the Aletsch glacier and Moosfluh slope instability. (a) SAR intensity image: Resultant of the surface velocities measured across-track & along-track directions of Sentinel-1 in the period 8 June–18 October 2017. Background map is SLC image 8 June 2017 (slant range oriented towards north); (b) Multispectral image: Resultant of the horizontal surface velocities (E-N directions) measured on Sentinel-2 track R108 and R065 in the periods 19 July–17 October and 26 June–14 October 2017, respectively. Background maps are the surface reflectance for the images 19 July 2017 and 26 June 2017, respectively. Surface velocities in the lower portions of the Moosfluh instability and in the central part of the Great Aletsch glacier are well mapped by DIC. Inaccurate/outlier DIC values are masked out. Modified from Manconi et al., 2018.
-
-<img src="https://github.com/bickelmps/DIC_FFT_ETHZ/blob/master/Figures/new_figure.PNG?raw=true">
-
-##### Figure. Displacement magnitude map used in a GIS environment, here: QGIS - example from the Swiss Alps, red color indicates large displacement magnitude; displacement within the lake is a result of poor correlation (expected for a smooth water surface):
 
 ------------------
 ##### MIT License - Copyright (c) 2018 Valentin Tertius Bickel & Andrea Manconi
