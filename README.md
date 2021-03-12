@@ -48,6 +48,8 @@ ________________________________________________________________________________
 - Landslide Research Group, Technical University of Munich, Germany
 - Department of Engineering Geology and Hydrogeology, RWTH Aachen, Germany
 - School of Earth and Environment, University of Canterbury, New Zealand
+- Institute of Photogrammetry and Geoinformation, Leibniz University Hannover, Germany
+- German Research Centre for Geosciences, Helmholtz Centre Potsdam, Germany
 - [...] 
 
 
