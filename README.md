@@ -38,7 +38,7 @@ ________________________________________________________________________________
 
 <img src="https://github.com/bickelmps/DIC_FFT_ETHZ/blob/master/Figures/glacier.gif?raw=true">
 
-##### Figure. Example of DIC_FFT application for glacier displacement monitoring. The subplots show 1) master and 2) slave images, 3) the displacement magnitude, as well as 4) the displacement vectors. More examples at the bottom of the readme!
+##### Figure. Example of DIC_FFT application for glacier displacement monitoring. The subplots show 1) primary and 2) secondary images, 3) the displacement magnitude, as well as 4) the displacement vectors. More examples at the bottom of the readme!
 ________________________________________________________________________________________________________
 
 ### Tool is being used by:
@@ -81,7 +81,7 @@ Online: https://de.mathworks.com/matlabcentral/fileexchange/8998-surface-fitting
 
 1. Clone and unzip DIC_FFT_ETHZ_Repo
 
-2. Place Master and Slave image(s) in the "Input" folder (or copy images from 'Example' folder for a demo)
+2. Place primary and secondary image(s) in the "Input" folder (or copy images from 'Example' folder for a demo)
 
 3. Customize setup for Preprocessing, DIC, and Postprocessing in run_pixel_offset.m, using the following variables. More information about the variables can be found further below:
 
@@ -159,10 +159,10 @@ insert a name for your output files
 #### pix
 insert the spatial resolution of the images used (GSD) in m/pixel
 
-#### master
+#### master (primary image)
 Enter the name of the old image here, including the file type
 
-#### slave
+#### slave (secondary image)
 Enter the name of the new image here, including the file type
 
 ### Preprocessing (Wallis filter & Co-registration)   - - - - - - - - - -
