@@ -52,6 +52,14 @@ ________________________________________________________________________________
 - German Research Centre for Geosciences, Helmholtz Centre Potsdam, Germany
 - [...] 
 
+### Publications
+- Aaron, J., Loew, S., Forrer, M. Recharge response and kinematics of an unusual earthflow in Liechtenstein. Landslides (18), 2021 (https://doi.org/10.1007/s10346-021-01633-5)
+- Storni, E., Hugentobler, M., Manconi, A., Loew, S. Monitoring and analysis of active rockslide-glacier interactions (Moosfluh, Switzerland). Geomorphology (371), 2020 (https://doi.org/10.1016/j.geomorph.2020.107414)
+- Raack, J., Conway, S.J., Heyer, T., Bickel, V.T., Philippe, P., Hiesinger, H., Johnsson, A., Massé, M. Present-day gully activity in Sisyphi Cavi, Mars – Flow-like features and block movements. Icarus (350), 2020 (https://doi.org/10.1016/j.icarus.2020.113899)
+- Hermle, D., Keuschnig, M., Krautblatter, M. Potential of multisensor assessment using digital image correlation for landslide detection and monitoring. EGU 2020-16982, 2020 (https://doi.org/10.5194/egusphere-egu2020-16982)
+- Storni, E., Loew, S., Manconi, A., Hugentobler, M. Monitoring and Analysis of Landslide-Glacier Interactions at the Great Aletsch Glacier (Switzerland). EGU 2020, 2020 (https://pdfs.semanticscholar.org/c735/e2d172970e3b8e83863a07a0c86a3bc3ec2a.pdf)
+- Glueer, F., Loew, S., Manconi,, A., Aaron, J. From Toppling to Sliding: Progressive Evolution of the Moosfluh Landslide, Switzerland. JGR Earth Surface (124), 2019 (https://doi.org/10.1029/2019JF005019)
+- Bickel, V.T., Manconi, A., Amann, F. Quantitative Assessment of Digital Image Correlation Methods to Detect and Monitor Surface Displacements of Large Slope Instabilities. Remote Sensing (10), 2018 (http://www.mdpi.com/2072-4292/10/6/865)
 
 ### Required Matlab toolboxes:
 - MATLAB R2017a
