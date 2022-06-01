@@ -54,6 +54,7 @@ ________________________________________________________________________________
 - [...] 
 
 ### Publications
+- Xu, S., Fu, P., Quincey, D., Feng, M., Marsh, S., Lui, Q. UAV-based geomorphological evolution of the Terminus Area of the Hailuogou Glacier, Southeastern Tibetan Plateau between 2017 and 2020. Geomorphology (411), 2022 (https://www.sciencedirect.com/science/article/pii/S0169555X22001866](https://doi.org/10.1016/j.geomorph.2022.108293)
 - Aaron, J., Loew, S., Forrer, M. Recharge response and kinematics of an unusual earthflow in Liechtenstein. Landslides (18), 2021 (https://doi.org/10.1007/s10346-021-01633-5)
 - Storni, E., Hugentobler, M., Manconi, A., Loew, S. Monitoring and analysis of active rockslide-glacier interactions (Moosfluh, Switzerland). Geomorphology (371), 2020 (https://doi.org/10.1016/j.geomorph.2020.107414)
 - Raack, J., Conway, S.J., Heyer, T., Bickel, V.T., Philippe, P., Hiesinger, H., Johnsson, A., Massé, M. Present-day gully activity in Sisyphi Cavi, Mars – Flow-like features and block movements. Icarus (350), 2020 (https://doi.org/10.1016/j.icarus.2020.113899)
