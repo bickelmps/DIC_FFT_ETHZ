@@ -54,6 +54,9 @@ ________________________________________________________________________________
 - [...] 
 
 ### Publications
+
+- Singeisen, C., Massey, C., Wolter, A., Kellett, R., Bloom, C., Stahl, T., Gasston, C., Jones, K. Mechanisms of rock slope failures triggered by the 2016 Mw 7.8 Kaikōura earthquake and implications for landslide susceptibility. Geomorphology (415), 2022 (https://doi.org/10.1016/j.geomorph.2022.108386)
+- Bickel, V.T., Manconi, A. Decadal Surface Changes and Displacements in Switzerland. Journal of Geovisualization and Spatial Analysis 6(24), 2022 (https://doi.org/10.1007/s41651-022-00119-9)
 - Xu, S., Fu, P., Quincey, D., Feng, M., Marsh, S., Lui, Q. UAV-based geomorphological evolution of the Terminus Area of the Hailuogou Glacier, Southeastern Tibetan Plateau between 2017 and 2020. Geomorphology (411), 2022 (https://doi.org/10.1016/j.geomorph.2022.108293)
 - Aaron, J., Loew, S., Forrer, M. Recharge response and kinematics of an unusual earthflow in Liechtenstein. Landslides (18), 2021 (https://doi.org/10.1007/s10346-021-01633-5)
 - Storni, E., Hugentobler, M., Manconi, A., Loew, S. Monitoring and analysis of active rockslide-glacier interactions (Moosfluh, Switzerland). Geomorphology (371), 2020 (https://doi.org/10.1016/j.geomorph.2020.107414)
@@ -61,7 +64,7 @@ ________________________________________________________________________________
 - Hermle, D., Keuschnig, M., Krautblatter, M. Potential of multisensor assessment using digital image correlation for landslide detection and monitoring. EGU 2020-16982, 2020 (https://doi.org/10.5194/egusphere-egu2020-16982)
 - Storni, E., Loew, S., Manconi, A., Hugentobler, M. Monitoring and Analysis of Landslide-Glacier Interactions at the Great Aletsch Glacier (Switzerland). EGU 2020, 2020 (https://pdfs.semanticscholar.org/c735/e2d172970e3b8e83863a07a0c86a3bc3ec2a.pdf)
 - Glueer, F., Loew, S., Manconi,, A., Aaron, J. From Toppling to Sliding: Progressive Evolution of the Moosfluh Landslide, Switzerland. JGR Earth Surface (124), 2019 (https://doi.org/10.1029/2019JF005019)
-- Bickel, V.T., Manconi, A., Amann, F. Quantitative Assessment of Digital Image Correlation Methods to Detect and Monitor Surface Displacements of Large Slope Instabilities. Remote Sensing (10), 2018 (http://www.mdpi.com/2072-4292/10/6/865)
+- Bickel, V.T., Manconi, A., Amann, F. Quantitative Assessment of Digital Image Correlation Methods to Detect and Monitor Surface Displacements of Large Slope Instabilities. Remote Sensing (10), 2018 (https://doi.org/10.3390/rs10060865)
 
 ### Required Matlab toolboxes:
 - MATLAB R2017a
