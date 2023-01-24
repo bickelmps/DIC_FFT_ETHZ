@@ -51,6 +51,7 @@ ________________________________________________________________________________
 - Institute of Photogrammetry and Geoinformation, Leibniz University Hannover, Germany
 - German Research Centre for Geosciences, Helmholtz Centre Potsdam, Germany
 - CSD Engineers, Switzerland
+- Geology & Geophysics, University of Utah, United States of America
 - [...] 
 
 ### Publications
