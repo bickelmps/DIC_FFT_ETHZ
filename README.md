@@ -56,6 +56,7 @@ ________________________________________________________________________________
 
 ### Publications
 
+- Hu, Y., Lu, Y. Study on soil-rock slope instability at mesoscopic scale using discrete element method. Computers and Geotechnics (157), 2023 (https://www.sciencedirect.com/science/article/pii/S0266352X23000253?via%3Dihub)
 - Singeisen, C., Massey, C., Wolter, A., Kellett, R., Bloom, C., Stahl, T., Gasston, C., Jones, K. Mechanisms of rock slope failures triggered by the 2016 Mw 7.8 Kaikōura earthquake and implications for landslide susceptibility. Geomorphology (415), 2022 (https://doi.org/10.1016/j.geomorph.2022.108386)
 - Bickel, V.T., Manconi, A. Decadal Surface Changes and Displacements in Switzerland. Journal of Geovisualization and Spatial Analysis 6(24), 2022 (https://doi.org/10.1007/s41651-022-00119-9)
 - Xu, S., Fu, P., Quincey, D., Feng, M., Marsh, S., Lui, Q. UAV-based geomorphological evolution of the Terminus Area of the Hailuogou Glacier, Southeastern Tibetan Plateau between 2017 and 2020. Geomorphology (411), 2022 (https://doi.org/10.1016/j.geomorph.2022.108293)
