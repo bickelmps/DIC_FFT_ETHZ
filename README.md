@@ -57,6 +57,7 @@ ________________________________________________________________________________
 ### Publications
 
 - Singeisen, C., Massey, C., Wolter, A., Stahl, T. et al. Evolution of an earthquake-induced landslide complex in the South Island of New Zealand: How fault damage zones and seismicity contribute to slope failures. Geosphere, 2023 (https://doi.org/10.1130/GES02668.1)
+- Hermle, D., Keuschnig, M., Krautblatter, M., Bickel, V.T. Systematic Quantification and Assessment of Digital Image Correlation Performance for Landslide Monitoring. Geosciences, 2023 (https://doi.org/10.3390/geosciences13120371)
 - Morriss, M., Lehmann, B., Campforts, B., Brencher, G. et al. Alpine hillslope failure in the western US: insights from the Chaos Canyon landslide, Rocky Mountain National Park, USA. Earth Surface Dynamics (11), 2023 ([https://www.sciencedirect.com/science/article/pii/S0266352X23000253?via%3Dihub](https://esurf.copernicus.org/articles/11/1251/2023/))
 - Hu, Y., Lu, Y. Study on soil-rock slope instability at mesoscopic scale using discrete element method. Computers and Geotechnics (157), 2023 (https://www.sciencedirect.com/science/article/pii/S0266352X23000253?via%3Dihub)
 - Singeisen, C., Massey, C., Wolter, A., Kellett, R., Bloom, C., Stahl, T., Gasston, C., Jones, K. Mechanisms of rock slope failures triggered by the 2016 Mw 7.8 Kaikōura earthquake and implications for landslide susceptibility. Geomorphology (415), 2022 (https://doi.org/10.1016/j.geomorph.2022.108386)
