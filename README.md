@@ -48,6 +48,7 @@ ________________________________________________________________________________
 - Landslide Research Group, Technical University of Munich, Germany
 - Department of Engineering Geology and Hydrogeology, RWTH Aachen, Germany
 - School of Earth and Environment, University of Canterbury, New Zealand
+- Centre for Hydrogeology and Geothermics, University of Neuchatel, Switzerland
 - Institute of Photogrammetry and Geoinformation, Leibniz University Hannover, Germany
 - German Research Centre for Geosciences, Helmholtz Centre Potsdam, Germany
 - CSD Engineers, Switzerland
@@ -56,6 +57,7 @@ ________________________________________________________________________________
 
 ### Publications
 
+- Louis, C., Halloran, L., Roques, C. Seasonal and Diurnal Freeze-Thaw Dynamics of a Rock Glacier and Their Impacts on Mixing and Solute Transport. EGUsphere preprint, 2024
 - Singeisen, C., Massey, C., Wolter, A., Stahl, T. et al. Evolution of an earthquake-induced landslide complex in the South Island of New Zealand: How fault damage zones and seismicity contribute to slope failures. Geosphere, 2023 (https://doi.org/10.1130/GES02668.1)
 - Hermle, D., Keuschnig, M., Krautblatter, M., Bickel, V.T. Systematic Quantification and Assessment of Digital Image Correlation Performance for Landslide Monitoring. Geosciences, 2023 (https://doi.org/10.3390/geosciences13120371)
 - Morriss, M., Lehmann, B., Campforts, B., Brencher, G. et al. Alpine hillslope failure in the western US: insights from the Chaos Canyon landslide, Rocky Mountain National Park, USA. Earth Surface Dynamics (11), 2023 ([https://www.sciencedirect.com/science/article/pii/S0266352X23000253?via%3Dihub](https://esurf.copernicus.org/articles/11/1251/2023/))
