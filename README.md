@@ -44,6 +44,7 @@ ________________________________________________________________________________
 ### Tool is being used by:
 - Engineering Geology Group, ETH Zurich, Switzerland
 - Swiss Seismological Service, ETH Zurich, Switzerland
+- WSL Institute for Snow and Avalanche Research SLF, Switzerland
 - Department Planets and Comets, Max Planck Institute for Solar System Research, Germany
 - Landslide Research Group, Technical University of Munich, Germany
 - Department of Engineering Geology and Hydrogeology, RWTH Aachen, Germany
@@ -57,6 +58,7 @@ ________________________________________________________________________________
 
 ### Publications
 
+- Manconi, A., Jones, N., Loew, S., et al. Monitoring surface deformation with spaceborne radar interferometry in landslide complexes: insights from the Brienz/Brinzauls slope instability, Swiss Alps. Landslides, 2024 (https://doi.org/10.1007/s10346-024-02291-z)
 - Louis, C., Halloran, L., Roques, C. Seasonal and Diurnal Freeze-Thaw Dynamics of a Rock Glacier and Their Impacts on Mixing and Solute Transport. EGUsphere preprint, 2024
 - Singeisen, C., Massey, C., Wolter, A., Stahl, T. et al. Evolution of an earthquake-induced landslide complex in the South Island of New Zealand: How fault damage zones and seismicity contribute to slope failures. Geosphere, 2023 (https://doi.org/10.1130/GES02668.1)
 - Hermle, D., Keuschnig, M., Krautblatter, M., Bickel, V.T. Systematic Quantification and Assessment of Digital Image Correlation Performance for Landslide Monitoring. Geosciences, 2023 (https://doi.org/10.3390/geosciences13120371)
