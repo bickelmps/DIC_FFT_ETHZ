@@ -58,6 +58,7 @@ ________________________________________________________________________________
 
 ### Publications
 
+- Louis, C., Halloran, L., Roques, C. Seasonal and diurnal freeze–thaw dynamics of a rock glacier and their impacts on mixing and solute transport. Hydrology and Earth System Sciences, 2025 (https://doi.org/10.5194/hess-29-1505-2025)
 - Manconi, A., Jones, N., Loew, S., et al. Monitoring surface deformation with spaceborne radar interferometry in landslide complexes: insights from the Brienz/Brinzauls slope instability, Swiss Alps. Landslides, 2024 (https://doi.org/10.1007/s10346-024-02291-z)
 - Louis, C., Halloran, L., Roques, C. Seasonal and Diurnal Freeze-Thaw Dynamics of a Rock Glacier and Their Impacts on Mixing and Solute Transport. EGUsphere preprint, 2024
 - Singeisen, C., Massey, C., Wolter, A., Stahl, T. et al. Evolution of an earthquake-induced landslide complex in the South Island of New Zealand: How fault damage zones and seismicity contribute to slope failures. Geosphere, 2023 (https://doi.org/10.1130/GES02668.1)
