@@ -55,10 +55,13 @@ ________________________________________________________________________________
 - CSD Engineers, Switzerland
 - Geology & Geophysics, University of Utah, United States of America
 - State Key Laboratory for Tunnel Engineering, China University of Mining and Technology-Beijing, Beijing, China
+- School of Geological Engineering and Geomatics, Chang’an University, China
+- Big Data Center for Geosciences and Satellites, Chang’an University, China
 - [...] 
 
 ### Publications
 
+- Liu, X., Zhu, W., Zhou, Y., Zhan, J., Wei, Z., Wu, J., Shang, H., Du, C. Multi-Platform geodetic synergy of InSAR, UAV, optical, and HD-ERT constrains kinematic evolution of the Jungong landslide (Yellow River Basin). International Journal of Applied Earth Observation and Geoinformation, 2026 (https://doi.org/10.1016/j.jag.2025.105082).
 - Zheng, X., Tao, Z., Yu, H. Model Study on the Failure Mechanism of Low-Inclination Anti-dip Slopes with Weak Interlayers. Rock Mechanics and Rock Engineering, 2025 (https://doi.org/10.1007/s00603-025-05169-1)
 - Louis, C., Halloran, L., Roques, C. Seasonal and diurnal freeze–thaw dynamics of a rock glacier and their impacts on mixing and solute transport. Hydrology and Earth System Sciences, 2025 (https://doi.org/10.5194/hess-29-1505-2025)
 - Manconi, A., Jones, N., Loew, S., et al. Monitoring surface deformation with spaceborne radar interferometry in landslide complexes: insights from the Brienz/Brinzauls slope instability, Swiss Alps. Landslides, 2024 (https://doi.org/10.1007/s10346-024-02291-z)
